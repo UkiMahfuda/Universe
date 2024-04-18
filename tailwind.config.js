@@ -7,6 +7,7 @@ export default {
       secondary: "#232428",
       white: "#FFFFFF",
       orange: "#BE6054",
+      transparent: "transparent",
     },
     extend: {},
   },

@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Navbar from "../Fragments/Navbar";
+import SideContact from "../Fragments/SideContact";
 
 const Layouts = (props) => {
   const { children } = props;
@@ -7,6 +8,7 @@ const Layouts = (props) => {
     <Fragment>
       <Navbar />
       {children}
+      <SideContact />
     </Fragment>
   );
 };
