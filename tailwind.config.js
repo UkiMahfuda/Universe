@@ -6,6 +6,7 @@ export default {
       primary: "#191E29",
       secondary: "#232A39",
       white: "#FFFFFF",
+      gray: "#A2A2A2",
       tesier: "#01C38D",
       transparent: "transparent",
     },
