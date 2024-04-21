@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <div
-        className={`grid grid-cols-2 lg:grid-cols-3 bg-primary transition-all duration-500 fixed top-0 left-0 right-0 z-50 text-white 
+        className={`grid grid-cols-2 lg:grid-cols-3 bg-primary transition-all duration-300 fixed top-0 left-0 right-0 z-50 text-white 
       ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
       >
         <div className="bg-transparent px-14 py-7">
@@ -35,7 +35,7 @@ const Navbar = () => {
 
       <div
         id="bottomNavbar"
-        className={`lg:invisible poppins-semibold transition-all duration-500 bottom-0 left-0 right-0 z-50 text-white fixed flex justify-evenly bg-secondary py-2    
+        className={`lg:invisible poppins-semibold transition-all duration-300 bottom-0 left-0 right-0 z-50 text-white fixed flex justify-evenly bg-secondary py-2    
     ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
       >
         {NavbarList.map((list) => (
