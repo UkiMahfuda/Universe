@@ -30,7 +30,7 @@ const Navbar = () => {
       </div>
       <div
         id="bottomNavbar"
-        className={`sm:invisible poppins-semibold transition-all duration-500 bottom-0 left-0 right-0 z-50 text-white px-5 fixed flex justify-evenly bg-secondary py-3     
+        className={`sm:invisible poppins-semibold transition-all duration-500 bottom-0 left-0 right-0 z-50 text-white px-5 fixed flex justify-evenly bg-secondary py-2     
       ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
       >
         {NavbarList.map((list) => (
