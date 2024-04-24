@@ -7,7 +7,7 @@ export const NavbarList = [
   },
   {
     name: "About",
-    link: "",
+    link: "/about",
   },
   {
     name: "Project",

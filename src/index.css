@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+/* *{
     background-color: #191E29;
-}
+} */
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
