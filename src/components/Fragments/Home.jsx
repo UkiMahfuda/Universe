@@ -1,9 +1,9 @@
 const Home = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-dvh">
+    <div className="flex flex-col justify-center items-center h-[200vh]">
       <div className="text-white text-left sm:text-center container px-5 mx-auto">
         <p className="montserrat-bold text-sm sm:text-base text-tesier">Hello, I'm</p>
-        <p className="montserrat-alternates-black my-3 text-3xl sm:text-4xl lg:text-5xl lg:*:my-4">Akhfee Lauki Mahfuda</p>
+        <p className="montserrat-alternates-black mb-3 text-3xl sm:text-4xl lg:text-5xl lg:*:my-4">Akhfee Lauki Mahfuda</p>
         <p className="montserrat mb-6 text-base text-gray">
           Undergraduate Informatics student who has a passion in the field of Software Engineering, especially <span className="text-tesier">Frontend Developer.</span> <br /> and has a little knowledge about Backend Developer.
         </p>

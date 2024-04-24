@@ -3,7 +3,7 @@ import { ContactList } from "../utils/data";
 const SideContact = () => {
   return (
     <div className="">
-      <div className=" text-white flex flex-col fixed my-auto justify-end lg:bottom-24 lg:right-16 z-50 invisible lg:visible ">
+      <div className=" text-white flex-col fixed my-auto justify-end lg:bottom-24 lg:right-16 z-50 hidden lg:flex ">
         {ContactList.map((list) => (
           <a className="my-3 bg-transparent group opacity-60 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" key={list.name} href={list.link}>
             {list.icon}
