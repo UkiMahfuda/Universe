@@ -14,7 +14,10 @@ export const Content = () => {
           <div className="grid grid-cols-1 gap-3">
             <p className="text-gray montserrat text-sm sm:text-base ">Hi There, My name is Akhfee Lauki Mahfuda aka Uki, I am a 6th semester informatics student who has an interest in programming.</p>
             <p className="text-gray montserrat text-sm sm:text-base ">As an Informatics student, I am used to working on projects using programming languages. such as project web development and mobile development</p>
-            <p className="text-gray montserrat text-sm sm:text-base ">And for now my focus is in the field of Frontend Development, I have strong knowledge and skills in Web Programming and Mobile Programming, especially UI.</p>
+            <p className="text-gray montserrat text-sm sm:text-base ">
+              And for now my focus is in the field of <span className="text-tesier">Frontend Development,</span> I have strong knowledge and skills in <span className="text-tesier">Web Programming</span> and{" "}
+              <span className="text-tesier">Mobile Programming,</span> especially UI.
+            </p>
             <p className="text-gray montserrat text-sm sm:text-base ">
               I am committed to continuing to learn and develop, in line with ongoing technological advances, because I believe technology will not stop and will continue to make progress in the technology industry.
             </p>

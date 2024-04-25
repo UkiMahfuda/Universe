@@ -42,7 +42,7 @@ const Navbar = () => {
           <GrContactInfo size={30} className="text-tesier " />
         </button>
         {popUp && (
-          <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
+          <div className="fixed  top-16 bg-gray-800 bg-opacity-50 flex items-center justify-center">
             <div className="bg-primary p-6 rounded shadow-xl">
               <h2 className="text-lg text-gray font-bold mb-4">Ini adalah Pop-up!</h2>
               <p className="text-gray">Isi pop-up dapat disesuaikan sesuai kebutuhan Anda.</p>
