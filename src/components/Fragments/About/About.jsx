@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="bg-primary">
       <div className="relative">
-        <img className="w-full object-cover object-top h-dvh opacity-5" src="public/images/bg.jpg" alt="background" />
+        <img className="w-full object-cover object-top h-dvh opacity-5" src="public/images/bg.svg" alt="background" />
         <div className="container items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-wrap sm:flex-nowrap sm:pr-5">
           <div className="px-5 lg:pl-28 lg:pr-16">
             <div className="mb-7">
@@ -20,7 +20,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <img src="public/images/profile.jpg" className=" w-52 h-52 lg:w-72 lg:h-72 mx-auto lg:mr-28 lg:ml-16 my-5 grayscale hover:grayscale-0 transition-all duration-500" alt="" />
+          <img src="public/images/profile.svg" className=" w-52 h-52 lg:w-72 lg:h-72 mx-auto lg:mr-28 lg:ml-16 my-5 grayscale hover:grayscale-0 transition-all duration-500" alt="" />
         </div>
       </div>
     </div>
