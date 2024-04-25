@@ -1,4 +1,4 @@
-import About from "../components/Fragments/About/About";
+import About from "../components/Fragments/About";
 import Layouts from "../components/Layouts/Layouts";
 
 const AboutPage = () => {
