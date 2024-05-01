@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import BtnNavbar from "../Elements/BtnNavbar";
-import { NavbarList } from "../utils/data";
+import { ContactList, NavbarList } from "../utils/data";
 import { GrContactInfo } from "react-icons/gr";
 import SideContact from "./SideContact";
 
@@ -44,13 +44,17 @@ const Navbar = () => {
           <GrContactInfo size={30} className="text-tesier " />
         </button>
         {popUp && (
-          <div className="fixed  top-16 bg-gray-800 bg-opacity-50 flex items-center justify-center lg:hidden">
-            <div className="bg-primary p-6 rounded shadow-xl">
-              <h2 className="text-lg text-gray font-bold mb-4">Ini adalah Pop-up!</h2>
-              <p className="text-gray">Isi pop-up dapat disesuaikan sesuai kebutuhan Anda.</p>
-              <button className="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={tooglePopUp}>
-                Tutup
-              </button>
+          <div className="fixed top-16 right-5 sm:right-14 bg-gray-800 bg-opacity-50 flex lg:hidden items-center justify-center">
+            <div className="bg-primary p-6  rounded-2xl shadow-xl ">
+              <h2 className="text-base text-gray poppins-semibold mb-4">Let's Connect !</h2>
+              {ContactList.map((list) => (
+                <a className="opacity-60 flex justify-center my-6 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" key={list.name} href={list.link}>
+                  {list.icon}
+                </a>
+              ))}
+              <a className="opacity-60 flex justify-center mb-2 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" href="">
+                ukimahfuda@gmail.com
+              </a>
             </div>
           </div>
         )}
