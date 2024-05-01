@@ -29,20 +29,22 @@ const Navbar = () => {
       ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
       >
         <div className=" bg-transparent px-5 py-5 sm:px-14 sm:py-7">
-          <p className="text-tesier montserrat-alternates-black text-xl bg-transparent">UkiMahfuda.</p>
+          <p className="text-tesier montserrat-alternates-black text-xl bg-transparent" data-aos="fade-down" data-aos-duration="500" data-aos-once="true">
+            UkiMahfuda.
+          </p>
         </div>
-        <div id="topNavbar" className=" rounded-b-md bg-transparent hidden text-gray lg:flex justify-evenly px-14 pt-6 p-3 poppins-semibold">
+        <div id="topNavbar" className=" rounded-b-md bg-transparent hidden text-gray lg:flex justify-evenly px-14 pt-6 p-3 poppins-semibold" data-aos="fade-down" data-aos-duration="500" data-aos-once="true">
           {NavbarList.map((list) => (
             <BtnNavbar key={list.name} link={list.link}>
               {list.name}
             </BtnNavbar>
           ))}
         </div>
-        <button onClick={tooglePopUp} className="flex justify-end px-5 py-5 sm:py-7 sm:px-14 lg:hidden">
+        <button onClick={tooglePopUp} className="flex justify-end px-5 py-5 sm:py-7 sm:px-14 lg:hidden" data-aos="fade-down" data-aos-duration="500" data-aos-once="true">
           <GrContactInfo size={30} className="text-tesier " />
         </button>
         {popUp && (
-          <div className="fixed  top-16 bg-gray-800 bg-opacity-50 flex items-center justify-center">
+          <div className="fixed  top-16 bg-gray-800 bg-opacity-50 flex items-center justify-center lg:hidden">
             <div className="bg-primary p-6 rounded shadow-xl">
               <h2 className="text-lg text-gray font-bold mb-4">Ini adalah Pop-up!</h2>
               <p className="text-gray">Isi pop-up dapat disesuaikan sesuai kebutuhan Anda.</p>

@@ -4,14 +4,16 @@ import profile from "/static/images/profile.webp";
 export const Content = () => {
   return (
     <div className="relative">
-      <img className="w-full object-cover object-top h-dvh opacity-5" src={background} alt="background" />
-      <div className="container items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-wrap sm:flex-nowrap sm:pr-5">
-        <div className="px-5 lg:pl-28 lg:pr-16">
+      <img className=" w-full object-cover object-top h-dvh opacity-5" src={background} alt="background" />
+      <div className=" container items-center absolute gap-5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-evenly flex-wrap lg:flex-nowrap lg:px-24 py-5 lg:mt-0 mt-10 px-5">
+        <div className=" lg:w-2/3">
           <div className="mb-7">
-            <h1 className="text-white text-lg sm:text-xl montserrat-bold ">This is About Me</h1>
-            <div className="w-1/2 h-0.5 bg-tesier"></div>
+            <h1 className="text-white text-lg sm:text-xl montserrat-bold" data-aos="fade-right" data-aos-delay="100">
+              This is About Me
+            </h1>
+            <div className="w-1/2 h-0.5 bg-tesier" data-aos="fade-right" data-aos-delay="200"></div>
           </div>
-          <div className="grid grid-cols-1 gap-3">
+          <div className="grid grid-cols-1 gap-3" data-aos="fade-right" data-aos-delay="300">
             <p className="text-gray montserrat text-sm sm:text-base ">Hi There, My name is Akhfee Lauki Mahfuda aka Uki, I am a 6th semester informatics student who has an interest in programming.</p>
             <p className="text-gray montserrat text-sm sm:text-base ">As an Informatics student, I am used to working on projects using programming languages. such as project web development and mobile development</p>
             <p className="text-gray montserrat text-sm sm:text-base ">
@@ -23,7 +25,11 @@ export const Content = () => {
             </p>
           </div>
         </div>
-        <img src={profile} className=" w-52 h-52 lg:w-72 lg:h-72 mx-auto lg:mr-28 lg:ml-16 my-5 grayscale hover:grayscale-0 transition-all duration-500" alt="" />
+        <div data-aos="fade-left" data-aos-delay="300" className=" ">
+          <div className="grayscale transition-all duration-500 hover:grayscale-0">
+            <img src={profile} alt="" className="w-52 h-52 sm:w-72 sm:h-72" />
+          </div>
+        </div>
       </div>
     </div>
   );
