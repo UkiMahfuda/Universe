@@ -1,4 +1,4 @@
-import Home from "../components/Fragments/Home/Home";
+import { Home } from "../components/Fragments/Home/Index";
 import Layouts from "../components/Layouts/Layouts";
 
 const HomePage = () => {

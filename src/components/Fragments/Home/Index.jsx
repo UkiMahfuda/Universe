@@ -1,4 +1,4 @@
-const Home = () => {
+export const Home = () => {
   return (
     <div className="flex flex-col justify-center items-center h-dvh bg-primary">
       <div className="text-white text-left sm:text-center container px-5 mx-auto">
@@ -18,5 +18,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
