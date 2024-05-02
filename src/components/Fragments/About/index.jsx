@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { Content } from "./Content/Content";
 
 const About = () => {

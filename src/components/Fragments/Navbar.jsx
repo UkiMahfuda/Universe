@@ -2,13 +2,14 @@ import React, { Fragment, useEffect, useState } from "react";
 import BtnNavbar from "../Elements/BtnNavbar";
 import { ContactList, NavbarList } from "../utils/data";
 import { GrContactInfo } from "react-icons/gr";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [popUp, setPopUp] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const tooglePopUp = () => {
-    setPopUp(!popUp);
+    setIsOpen(!isOpen);
   };
 
   useEffect(() => {
@@ -39,10 +40,10 @@ const Navbar = () => {
             </BtnNavbar>
           ))}
         </div>
-        <button onClick={tooglePopUp} className="flex justify-end px-5 py-5 sm:py-7 sm:px-14 lg:hidden" data-aos="fade-down">
+        {/* <button onClick={tooglePopUp} className="flex justify-end px-5 py-5 sm:py-7 sm:px-14 lg:hidden" data-aos="fade-down">
           <GrContactInfo size={30} className="text-tesier " />
         </button>
-        {popUp && (
+        {isOpen && (
           <div className="fixed top-16 right-5 sm:right-14 bg-gray-800 bg-opacity-50 flex lg:hidden items-center justify-center">
             <div className="bg-secondary p-6  rounded-2xl shadow-xl ">
               <h2 className="text-base text-gray poppins-semibold mb-4">Let's Connect !</h2>
@@ -56,7 +57,28 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-        )}
+        )} */}
+      </div>
+
+      <div className="fixed bottom-20 z-50 right-5 lg:hidden">
+        <motion.div
+          layout
+          data-isOpen={isOpen}
+          initial={{ borderRadius: 50 }}
+          className={`parent bg-secondary w-14 h-14 flex items-start justify-center pt-3 overflow-hidden ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <motion.div layout>
+            <GrContactInfo size={30} className="text-tesier" />
+            <motion.div layout className="py-10 gap-y-3 flex flex-col">
+              {ContactList.map((list) => (
+                <a className="opacity-60  justify-center text-gray py-3 px-1 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" key={list.name} href={list.link}>
+                  {list.icon}
+                </a>
+              ))}
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </div>
 
       <div

@@ -19,16 +19,16 @@ export const ContactList = [
   {
     name: "Github",
     link: "",
-    icon: <FaGithub size={20} />,
+    icon: <FaGithub size={23} />,
   },
   {
     name: "Linkedin",
     link: "",
-    icon: <FaLinkedinIn size={20} />,
+    icon: <FaLinkedinIn size={23} />,
   },
   {
     name: "Instagram",
     link: "",
-    icon: <FaInstagram size={20} />,
+    icon: <FaInstagram size={23} />,
   },
 ];

@@ -31,3 +31,8 @@
     font-weight: 600;
     font-style: normal;
     }
+
+.parent[data-isOpen="true"] {
+  width: 75px;
+  height: 350px;
+}
