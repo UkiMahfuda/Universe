@@ -1,9 +1,18 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const BtnNavbar = (props) => {
   const { children, link } = props;
+  const [active, setActive] = useState(false);
+  // dimana letak path yang active
+  const location = useLocation();
+
+  useEffect(() => {
+    setActive(location.pathname === link);
+  }, [location, link]);
+
   return (
-    <Link className=" hover:text-tesier transition-all p-3 bg-transparent" to={link}>
+    <Link onClick={() => setActive(!active)} className={`hover:text-tesier transition-all p-3 bg-transparent ${active ? "text-tesier" : ""} `} to={link}>
       {children}
     </Link>
   );

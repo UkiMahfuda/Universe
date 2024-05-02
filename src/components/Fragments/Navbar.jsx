@@ -28,23 +28,23 @@ const Navbar = () => {
       ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
       >
         <div className=" bg-transparent px-5 py-5 sm:px-14 sm:py-7">
-          <p className="text-tesier montserrat-alternates-black text-xl bg-transparent" data-aos="fade-down" data-aos-duration="500" data-aos-once="true">
+          <p className="text-tesier montserrat-alternates-black text-xl bg-transparent" data-aos="fade-down">
             UkiMahfuda.
           </p>
         </div>
-        <div id="topNavbar" className=" rounded-b-md bg-transparent hidden text-gray lg:flex justify-evenly px-14 pt-6 p-3 poppins-semibold" data-aos="fade-down" data-aos-duration="500" data-aos-once="true">
+        <div id="topNavbar" className=" rounded-b-md bg-transparent hidden text-gray lg:flex justify-evenly px-14 pt-6 p-3 poppins-semibold" data-aos="fade-down">
           {NavbarList.map((list) => (
             <BtnNavbar key={list.name} link={list.link}>
               {list.name}
             </BtnNavbar>
           ))}
         </div>
-        <button onClick={tooglePopUp} className="flex justify-end px-5 py-5 sm:py-7 sm:px-14 lg:hidden" data-aos="fade-down" data-aos-duration="500" data-aos-once="true">
+        <button onClick={tooglePopUp} className="flex justify-end px-5 py-5 sm:py-7 sm:px-14 lg:hidden" data-aos="fade-down">
           <GrContactInfo size={30} className="text-tesier " />
         </button>
         {popUp && (
           <div className="fixed top-16 right-5 sm:right-14 bg-gray-800 bg-opacity-50 flex lg:hidden items-center justify-center">
-            <div className="bg-primary p-6  rounded-2xl shadow-xl ">
+            <div className="bg-secondary p-6  rounded-2xl shadow-xl ">
               <h2 className="text-base text-gray poppins-semibold mb-4">Let's Connect !</h2>
               {ContactList.map((list) => (
                 <a className="opacity-60 flex justify-center my-6 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" key={list.name} href={list.link}>
