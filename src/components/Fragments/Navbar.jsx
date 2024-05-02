@@ -60,7 +60,7 @@ const Navbar = () => {
         )} */}
       </div>
 
-      <div className="fixed bottom-20 z-50 right-5 lg:hidden">
+      <div className="fixed bottom-20 z-50 right-5 lg:hidden" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500">
         <motion.div
           layout
           data-isOpen={isOpen}
