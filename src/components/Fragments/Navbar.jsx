@@ -28,11 +28,11 @@ const Navbar = () => {
       ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
       >
         <div className=" bg-transparent px-5 py-5 sm:px-14 sm:py-7">
-          <p className="text-tesier montserrat-alternates-black text-xl bg-transparent" data-aos="fade-down">
+          <p className="text-tesier montserrat-alternates-black text-xl bg-transparent" data-aos="fade-down" data-aos-delay="50">
             UkiMahfuda.
           </p>
         </div>
-        <div id="topNavbar" className=" rounded-b-md bg-transparent hidden text-gray lg:flex justify-evenly px-14 pt-6 p-3 poppins-semibold" data-aos="fade-down">
+        <div id="topNavbar" className=" rounded-b-md bg-transparent hidden text-gray lg:flex justify-evenly px-14 pt-6 p-3 poppins-semibold" data-aos="fade-down" data-aos-delay="100">
           {NavbarList.map((list) => (
             <BtnNavbar key={list.name} link={list.link}>
               {list.name}
