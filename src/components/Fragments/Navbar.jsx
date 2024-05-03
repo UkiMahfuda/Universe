@@ -60,12 +60,12 @@ const Navbar = () => {
         )} */}
       </div>
 
-      <div className="fixed bottom-20 z-50 right-5 lg:hidden" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500">
+      <div className="fixed bottom-20 z-50 right-5 lg:hidden transition-all duration-300" data-aos="fade-left" data-aos-delay="100">
         <motion.div
           layout
-          data-isOpen={isOpen}
+          data-isopen={isOpen}
           initial={{ borderRadius: 50 }}
-          className={`parent bg-secondary w-14 h-14 flex items-start justify-center pt-3 overflow-hidden ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
+          className={`parent bg-secondary w-14  h-14 flex items-start justify-center pt-3 overflow-hidden ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           <motion.div layout>

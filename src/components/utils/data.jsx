@@ -1,4 +1,5 @@
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 export const NavbarList = [
   {
@@ -30,5 +31,10 @@ export const ContactList = [
     name: "Instagram",
     link: "",
     icon: <FaInstagram size={23} />,
+  },
+  {
+    name: "Email",
+    link: "",
+    icon: <MdEmail size={23} />,
   },
 ];
