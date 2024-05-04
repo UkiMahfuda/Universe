@@ -12,7 +12,7 @@ export const NavbarList = [
   },
   {
     name: "Project",
-    link: "",
+    link: "/project",
   },
 ];
 

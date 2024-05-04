@@ -3,7 +3,7 @@ import profile from "/static/images/profile.webp";
 
 export const Content = () => {
   return (
-    <div className="relative">
+    <div className="relative ">
       <img className=" w-full object-cover object-top h-dvh opacity-5" src={background} alt="background" />
       <div className=" container items-center absolute gap-5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-evenly flex-wrap lg:flex-nowrap lg:px-24 py-5 lg:mt-0 mt-3 px-5 sm:px-10 ">
         <div className=" lg:w-2/3">
