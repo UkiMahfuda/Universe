@@ -3,6 +3,21 @@ import { MdEmail } from "react-icons/md";
 import webbooking from "/static/projects/webbooking.svg";
 import mobilebooking from "/static/projects/mobilebooking.svg";
 import bookshelf from "/static/projects/bookshelf.svg";
+import html from "/static/icons/html.svg";
+import css from "/static/icons/css.svg";
+import js from "/static/icons/js.svg";
+import tailwind from "/static/icons/tailwind.svg";
+import ai from "/static/icons/ai.svg";
+import blender from "/static/icons/blender.svg";
+import bootstrap from "/static/icons/bootsrap.svg";
+import dart from "/static/icons/dart.svg";
+import flutter from "/static/icons/flutter.svg";
+import git from "/static/icons/git.svg";
+import mysql from "/static/icons/mysql.svg";
+import php from "/static/icons/php.svg";
+import vscode from "/static/icons/vscode.svg";
+import github from "/static/icons/github.svg";
+import laravel from "/static/icons/laravel.svg";
 
 export const NavbarList = [
   {
@@ -60,5 +75,101 @@ export const ProjectList = [
     image: bookshelf,
     desc: "This Apps is final course create frontend web for beginner. On this apps you can add book and delete book. In build it use DOM manipulation to organize and local storage for data",
     tech: "Javascript, TailwindCSS.",
+  },
+];
+
+export const TechStack = [
+  {
+    name: "HTML",
+    image: html,
+    level: "Advanced",
+    delay: 0,
+  },
+  {
+    name: "CSS",
+    image: css,
+    level: "Advanced",
+    delay: 50,
+  },
+  {
+    name: "Bootstrap",
+    image: bootstrap,
+    level: "Advanced",
+    delay: 100,
+  },
+  {
+    name: "Tailwind",
+    image: tailwind,
+    level: "Advanced",
+    delay: 150,
+  },
+  {
+    name: "JavaScript",
+    image: js,
+    level: "Intermediate",
+    delay: 200,
+  },
+  {
+    name: "PHP",
+    image: php,
+    level: "Intermedite",
+    delay: 250,
+  },
+  {
+    name: "Dart",
+    image: dart,
+    level: "Beginner",
+    delay: 300,
+  },
+  {
+    name: "Laravel",
+    image: laravel,
+    level: "Advanced",
+    delay: 350,
+  },
+  {
+    name: "Flutter",
+    image: flutter,
+    level: "Intermedite",
+    delay: 400,
+  },
+  {
+    name: "My Sql",
+    image: mysql,
+    level: "Advanced",
+    delay: 450,
+  },
+];
+
+export const Tools = [
+  {
+    name: "Visual Studio Code",
+    image: vscode,
+    option: "Code Editor",
+    delay: 0,
+  },
+  {
+    name: "Git",
+    image: git,
+    option: "Version Control",
+    delay: 50,
+  },
+  {
+    name: "Github",
+    image: github,
+    option: "Version Control",
+    delay: 100,
+  },
+  {
+    name: "Blender",
+    image: blender,
+    option: "3D Modeling",
+    delay: 150,
+  },
+  {
+    name: "Adobe Illustrator",
+    image: ai,
+    option: "Graphic Design",
+    delay: 200,
   },
 ];
