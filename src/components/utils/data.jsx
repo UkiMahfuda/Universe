@@ -18,6 +18,12 @@ import php from "/static/icons/php.svg";
 import vscode from "/static/icons/vscode.svg";
 import github from "/static/icons/github.svg";
 import laravel from "/static/icons/laravel.svg";
+import expressjs from "/static/icons/expressjs.svg";
+import mongodb from "/static/icons/mongodb.svg";
+import nodejs from "/static/icons/nodejs.svg";
+import figma from "/static/icons/figma.svg";
+import python from "/static/icons/python.svg";
+import reactjs from "/static/icons/reactjs.svg";
 
 export const NavbarList = [
   {
@@ -112,7 +118,7 @@ export const TechStack = [
   {
     name: "PHP",
     image: php,
-    level: "Intermedite",
+    level: "Intermediate",
     delay: 250,
   },
   {
@@ -122,22 +128,52 @@ export const TechStack = [
     delay: 300,
   },
   {
+    name: "Python",
+    image: python,
+    level: "Beginner",
+    delay: 350,
+  },
+  {
     name: "Laravel",
     image: laravel,
     level: "Advanced",
-    delay: 350,
+    delay: 400,
+  },
+  {
+    name: "Express Js",
+    image: expressjs,
+    level: "Beginner",
+    delay: 450,
+  },
+  {
+    name: "React Js",
+    image: reactjs,
+    level: "Intermediate",
+    delay: 500,
   },
   {
     name: "Flutter",
     image: flutter,
-    level: "Intermedite",
-    delay: 400,
+    level: "Intermediate",
+    delay: 550,
+  },
+  {
+    name: "Node Js",
+    image: nodejs,
+    level: "Beginner",
+    delay: 600,
   },
   {
     name: "My Sql",
     image: mysql,
     level: "Advanced",
-    delay: 450,
+    delay: 650,
+  },
+  {
+    name: "Mongo DB",
+    image: mongodb,
+    level: "Beginner",
+    delay: 700,
   },
 ];
 
@@ -147,18 +183,6 @@ export const Tools = [
     image: vscode,
     option: "Code Editor",
     delay: 0,
-  },
-  {
-    name: "Git",
-    image: git,
-    option: "Version Control",
-    delay: 50,
-  },
-  {
-    name: "Github",
-    image: github,
-    option: "Version Control",
-    delay: 100,
   },
   {
     name: "Blender",
@@ -171,5 +195,23 @@ export const Tools = [
     image: ai,
     option: "Graphic Design",
     delay: 200,
+  },
+  {
+    name: "Figma",
+    image: figma,
+    option: "UI Design",
+    delay: 250,
+  },
+  {
+    name: "Git",
+    image: git,
+    option: "Version Control",
+    delay: 50,
+  },
+  {
+    name: "Github",
+    image: github,
+    option: "Version Control",
+    delay: 100,
   },
 ];
