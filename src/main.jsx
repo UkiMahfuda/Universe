@@ -6,11 +6,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ComingSoon from "./pages/soonPage";
 import AboutPage from "./pages/aboutPage";
 import ProjectPage from "./pages/projectPage";
+import { ErrorPage } from "./pages/404Page";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <ComingSoon />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/home",
