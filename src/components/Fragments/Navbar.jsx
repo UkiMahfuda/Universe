@@ -28,10 +28,8 @@ const Navbar = () => {
         className={`grid grid-cols-2 lg:grid-cols-3 bg-primary transition-all bg-transparent duration-300 fixed top-0 left-0 right-0 z-50 text-white 
       ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
       >
-        <div className=" bg-transparent px-5 py-5 sm:px-14 sm:py-7">
-          <p className="text-tesier montserrat-alternates-black text-xl bg-transparent" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50">
-            UkiMahfuda.
-          </p>
+        <div className=" bg-transparent px-5 py-5 sm:px-14 sm:py-7" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50">
+          <p className="text-tesier montserrat-alternates-black text-xl bg-transparent hover:animate-pulse transition-all">UkiMahfuda.</p>
         </div>
         <div id="topNavbar" className=" rounded-b-md bg-transparent hidden text-gray lg:flex justify-evenly px-14 pt-6 p-3 poppins-semibold" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100">
           {NavbarList.map((list) => (
