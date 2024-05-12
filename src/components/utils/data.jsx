@@ -24,19 +24,20 @@ import nodejs from "/static/icons/nodejs.svg";
 import figma from "/static/icons/figma.svg";
 import python from "/static/icons/python.svg";
 import reactjs from "/static/icons/reactjs.svg";
+import firebase from "/static/icons/firebase.svg";
 
 export const NavbarList = [
   {
     name: "Home",
-    link: "/home",
+    link: "/home89",
   },
   {
     name: "About",
-    link: "/about",
+    link: "/about89",
   },
   {
     name: "Project",
-    link: "/project",
+    link: "/project89",
   },
 ];
 
@@ -69,21 +70,21 @@ export const ProjectList = [
     name: "Sistem Peminjaman Ruangan Berbasis Web.",
     image: webbooking,
     desc: "This website was designed and developed as a final assignment in a Web Programming course. In build this web uses Laravel 9 and MySql as database",
-    tech: "Javascript, Laravel, Bootstrap, MySql",
+    tech: [laravel, js, bootstrap, mysql],
   },
   {
     id: 2,
     name: "Sistem Peminjaman Ruangan Berbasis Mobile.",
     image: mobilebooking,
     desc: "This website was designed and developed as a final assignment in a Mobile Programming course. This apps develop uses Firebase to manage the database so that data can be easily integrated",
-    tech: "Flutter, Android Studio, Firebase.",
+    tech: [dart, flutter, firebase],
   },
   {
     id: 3,
     name: "Bookshelf Apps.",
     image: bookshelf,
     desc: "This Apps is final course create frontend web for beginner. On this apps you can add book and delete book. In build it use DOM manipulation to organize and local storage for data",
-    tech: "Javascript, TailwindCSS.",
+    tech: [js, tailwind],
   },
 ];
 

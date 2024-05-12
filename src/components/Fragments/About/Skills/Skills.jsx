@@ -12,7 +12,7 @@ export const Skills = () => {
     setActive("tools");
   };
   return (
-    <div className="lg:h-[900px] flex  justify-center py-28">
+    <div className="lg:h-[950px] flex  justify-center py-28">
       <div className=" container flex flex-col items-center">
         <div className=" w-full sm:w-10/12 px-5 sm:px-3" data-aos="fade-up">
           <h1 className="text-white text-lg sm:text-xl montserrat-bold">My Skill's</h1>

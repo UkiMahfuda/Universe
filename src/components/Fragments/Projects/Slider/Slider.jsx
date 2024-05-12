@@ -1,30 +1,50 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/sea-green";
+import { Link } from "react-router-dom";
 import { ProjectList } from "../../../utils/data";
 
 const Slider = () => {
   return (
     <Splide
-      className="bg-secondary rounded-md container w-11/12 lg:w-3/4  "
+      className="bg-secondary rounded-md container w-full sm:w-11/12 lg:w-3/4"
       aria-label="My Favorite Images"
       data-aos="fade-up"
       data-aos-delay="150"
       key={"slider"}
       options={{
         rewind: true,
-        gap: "2rem",
+        type: "loop",
+        perPage: 3,
+        breakpoints: {
+          1024: {
+            gap: "1rem",
+            perPage: 2,
+            arrows: false,
+          },
+          640: {
+            perPage: 1,
+          },
+        },
       }}
     >
       {ProjectList.map((project) => (
         <SplideSlide key={project.id}>
-          <div key={project.id} className="flex flex-col md:flex-row gap-5 sm:mx-2 p-4 border-2 border-gray border-opacity-50 rounded-lg mx-2 h-full overflow-auto">
-            <img src={project.image} alt="Image 2" className="hover:opacity-50 transition-all rounded-md object-cover object-top md:w-2/5 h-48 xl:h-48 md:h-full" />
-            <div className="flex flex-col justify-between  md:w-3/5 h-3/5 sm:h-full ">
-              <div className="mb-4">
-                <h1 className="poppins-semibold text-white text-lg mb-2 md:mb-0 transition-all hover:text-tesier">{project.name}</h1>
-                <p className="text-gray ">{project.desc}</p>
+          <div key={project.id} className="border-2 lg:mx-3 overflow-hidden border-opacity-50 rounded-md border-gray flex flex-col gap-3">
+            <Link to="project/desc">
+              <div className="w-full h-[175px] hover:opacity-50 opacity-100 transition-all ">
+                <img src={project.image} alt="Image 2" className="h-full object-cover w-full object-top" />
               </div>
-              <p className="text-gray ">{project.tech}</p>
+            </Link>
+            <div className=" flex flex-col gap-3 px-2 pb-2 ">
+              <div className=" h-[115px] overflow-hidden flex flex-col  justify-between">
+                <h1 className=" text-white text-base xl:text-lg poppins-semibold">{project.name}</h1>
+                <p className=" text-gray h-2/5 text-base line-clamp-2">{project.desc}</p>
+              </div>
+              <div className="flex flex-row gap-3">
+                {project.tech.map((tech, index) => (
+                  <img key={index} src={tech} alt="tech" className="md:h-7 h-6" />
+                ))}
+              </div>
             </div>
           </div>
         </SplideSlide>
