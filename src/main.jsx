@@ -7,6 +7,8 @@ import ComingSoon from "./pages/soonPage";
 import AboutPage from "./pages/aboutPage";
 import ProjectPage from "./pages/projectPage";
 import { ErrorPage } from "./pages/404Page";
+import DescPage from "./pages/descPage";
+import { ProjectList } from "./components/utils/data";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/project89",
     element: <ProjectPage />,
+  },
+  {
+    path: "/project/desc",
+    element: <DescPage descProject={ProjectList} />,
   },
 ]);
 
