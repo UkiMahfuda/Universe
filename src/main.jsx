@@ -17,20 +17,20 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/home89",
+    path: "/home",
     element: <HomePage />,
   },
   {
-    path: "/about89",
+    path: "/about",
     element: <AboutPage />,
   },
   {
-    path: "/project89",
+    path: "/project",
     element: <ProjectPage />,
   },
   {
-    path: "/project/desc",
-    element: <DescPage descProject={ProjectList} />,
+    path: "/project/desc/:slug",
+    element: <DescPage />,
   },
 ]);
 

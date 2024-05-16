@@ -31,7 +31,7 @@ export const Home = () => {
               Akhfee Lauki Mahfuda
             </p>
             <p className="montserrat mb-6 text-base text-gray" data-aos="zoom-in" data-aos-delay="100">
-              Undergraduate Informatics student who has a passion in the field of Software Engineer, especially <span className="text-tesier">Frontend Developer.</span> <br /> and has a little knowledge about Backend Developer.
+              I am a <span className="text-tesier">Frontend Developer</span> with interest in software engineering. I enjoy creating UI displays, especially in Web and Mobile development.
             </p>
             <div data-aos="zoom-in" data-aos-delay="200">
               <button className="poppins-semibold text-sm text-tesier outline-2 outline-offset-2 outline w-40 h-10 rounded-full transition-all duration-400 hover:bg-tesier hover:bg-opacity-25">View My CV</button>

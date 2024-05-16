@@ -1,8 +1,16 @@
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import webbooking from "/static/projects/webbooking.svg";
-import mobilebooking from "/static/projects/mobilebooking.svg";
-import bookshelf from "/static/projects/bookshelf.svg";
+import webbooking from "/static/projects/webbooking/webbooking.svg";
+import mobilebooking from "/static/projects/mobilebooking/mobilebooking.svg";
+import bookshelf from "/static/projects/bookshelf/bookshelf.svg";
+import web1 from "/static/projects/webbooking/1.svg";
+import web2 from "/static/projects/webbooking/2.svg";
+import web3 from "/static/projects/webbooking/3.svg";
+import web4 from "/static/projects/webbooking/4.svg";
+import web5 from "/static/projects/webbooking/5.svg";
+import bookshelf1 from "/static/projects/bookshelf/bookshelf1.svg";
+import bookshelf2 from "/static/projects/bookshelf/bookshelf2.svg";
+import bookshelf3 from "/static/projects/bookshelf/bookshelf3.svg";
 import html from "/static/icons/html.svg";
 import css from "/static/icons/css.svg";
 import js from "/static/icons/js.svg";
@@ -29,15 +37,15 @@ import firebase from "/static/icons/firebase.svg";
 export const NavbarList = [
   {
     name: "Home",
-    link: "/home89",
+    link: "/home",
   },
   {
     name: "About",
-    link: "/about89",
+    link: "/about",
   },
   {
     name: "Project",
-    link: "/project89",
+    link: "/project",
   },
 ];
 
@@ -66,24 +74,66 @@ export const ContactList = [
 
 export const ProjectList = [
   {
-    slug: "sistem_peminjaman_ruangan_berbasis_web",
     name: "Sistem Peminjaman Ruangan Berbasis Web.",
+    slug: "sistem_peminjaman_ruangan_berbasis_web",
+    desc: `
+      This website was designed and developed as a final assignment in a Web Programming course. 
+      The project aimed to demonstrate proficiency in both front-end and back-end development, 
+      showcasing a comprehensive understanding of web technologies.
+
+
+      
+      In building this web application, Laravel 9 was utilized as the primary framework due to its robust features 
+      and ease of use for rapid development. MySql was chosen as the database management system for its reliability 
+      and performance in handling complex queries and large datasets.
+
+      The website incorporates responsive design principles to ensure accessibility across various devices, 
+      and includes features such as user authentication, dynamic content management, and interactive user interfaces. 
+      This project represents a culmination of the skills and knowledge acquired throughout the course, emphasizing best practices 
+      in coding, database management, and user experience design.
+    `.trim(),
+    link: "",
+    repo: "",
     image: webbooking,
-    desc: "This website was designed and developed as a final assignment in a Web Programming course. In build this web uses Laravel 9 and MySql as database",
+    imageProject: [web1, web2, web3, web4, web5],
     tech: [laravel, js, bootstrap, mysql],
   },
   {
-    slug: "sistem_peminjaman_ruangan_berbasis_mobile",
     name: "Sistem Peminjaman Ruangan Berbasis Mobile.",
+    slug: "sistem_peminjaman_ruangan_berbasis_mobile",
+    desc: `
+      This website was designed and developed as a final assignment in a Mobile Programming course. 
+      The app was developed using Firebase to manage the database, ensuring seamless data integration 
+      and real-time updates. Firebase was chosen for its robust capabilities, including authentication, 
+      cloud storage, and hosting, making it an ideal solution for mobile applications.
+
+      The project highlights key aspects of mobile development, such as responsive design, user-friendly interfaces, 
+      and efficient data handling. This assignment showcases the practical application of skills learned during the course, 
+      emphasizing the importance of integrating modern technologies to create efficient and effective mobile applications.
+    `.trim(),
+    link: "",
+    repo: "",
     image: mobilebooking,
-    desc: "This website was designed and developed as a final assignment in a Mobile Programming course. This apps develop uses Firebase to manage the database so that data can be easily integrated",
+    imageProject: [web1, web2, web3, web4, web5],
     tech: [dart, flutter, firebase],
   },
   {
-    slug: "bookshelf_apps",
     name: "Bookshelf Apps.",
+    slug: "bookshelf_apps",
+    desc: `
+      This app is a final course project designed to create a front-end web application for beginners. 
+      In this app, users can add and delete books, providing a simple yet effective way to manage a book collection.
+
+      The development focuses on using DOM manipulation to dynamically organize content and local storage to persist data. 
+      These techniques allow for an interactive user experience and demonstrate fundamental web development skills.
+
+      This project serves as an introduction to essential concepts in front-end development, 
+      highlighting the practical application of JavaScript for creating dynamic and responsive web applications.
+    `.trim(),
+    link: "",
+    repo: "",
     image: bookshelf,
-    desc: "This Apps is final course create frontend web for beginner. On this apps you can add book and delete book. In build it use DOM manipulation to organize and local storage for data",
+    imageProject: [bookshelf1, bookshelf2, bookshelf3],
     tech: [js, tailwind],
   },
 ];
