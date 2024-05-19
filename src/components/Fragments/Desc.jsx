@@ -28,7 +28,7 @@ const Desc = () => {
               <a data-aos="fade-up" data-aos-delay="100" href={project.repo} className="hover:text-tesier transition-all">
                 <FiGithub size={23} />
               </a>
-              <a data-aos="fade-up " data-aos-delay="125" href={project.link} className="hover:text-tesier transition-all">
+              <a data-aos="fade-up" data-aos-delay="100" href={project.link} className="hover:text-tesier transition-all">
                 <GoLinkExternal size={23} />
               </a>
             </div>

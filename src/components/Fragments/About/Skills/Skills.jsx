@@ -19,12 +19,12 @@ export const Skills = () => {
           <div className="w-1/2 h-0.5 bg-tesier"></div>
           <div className="my-7 poppins-semibold flex  text-gray">
             <div data-aos="fade-up" data-aos-delay="50">
-              <button onClick={showStack} className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50  px-5 py-2 ${active === "stack" ? "bg-secondary border-opacity-50" : ""}`}>
+              <button onClick={showStack} className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${active === "stack" ? "bg-secondary border-opacity-50" : ""}`}>
                 Tech Stack
               </button>
             </div>
             <div data-aos="fade-up" data-aos-delay="100">
-              <button onClick={showTools} className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50  px-5 py-2 ${active === "tools" ? "bg-secondary border-opacity-50" : ""}`}>
+              <button onClick={showTools} className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${active === "tools" ? "bg-secondary border-opacity-50" : ""}`}>
                 Tools
               </button>
             </div>
