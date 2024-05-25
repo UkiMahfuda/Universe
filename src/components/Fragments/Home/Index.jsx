@@ -24,7 +24,7 @@ export const Home = () => {
       <div className="h-dvh" id="element">
         <div className="flex flex-col justify-center items-center h-dvh bg-primary bg-opacity-75">
           <div className="text-white text-left sm:text-center container px-5 lg:px-10 xl:px-5 mx-auto">
-            <p className="montserrat-bold text-sm sm:text-base text-tesier" data-aos="zoom-in">
+            <p className="montserrat-bold text-base text-tesier" data-aos="zoom-in">
               Hello, I'm
             </p>
             <p className="montserrat-alternates-black mb-3 text-3xl sm:text-4xl xl:text-5xl lg:my-2 xl:my-4" data-aos="zoom-in" data-aos-delay="50">
