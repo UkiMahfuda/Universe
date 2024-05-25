@@ -52,17 +52,17 @@ export const NavbarList = [
 export const ContactList = [
   {
     name: "Github",
-    link: "",
+    link: "https://github.com/UkiMahfuda",
     icon: <FaGithub size={23} />,
   },
   {
     name: "Linkedin",
-    link: "",
+    link: "www.linkedin.com/in/ukimahfuda",
     icon: <FaLinkedinIn size={23} />,
   },
   {
     name: "Instagram",
-    link: "",
+    link: "https://instagram.com/uki.mhfda",
     icon: <FaInstagram size={23} />,
   },
   {
