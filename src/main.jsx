@@ -13,12 +13,8 @@ import { ProjectList } from "./components/utils/data";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <ComingSoon />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/home",
     element: <HomePage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/about",
