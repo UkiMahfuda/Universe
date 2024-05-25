@@ -23,7 +23,7 @@ export const Home = () => {
     <Fragment>
       <div className="h-dvh" id="element">
         <div className="flex flex-col justify-center items-center h-dvh bg-primary bg-opacity-75">
-          <div className="text-white text-left sm:text-center container px-5 lg:px-10 mx-auto">
+          <div className="text-white text-left sm:text-center container px-5 lg:px-10 xl:px-5 mx-auto">
             <p className="montserrat-bold text-sm sm:text-base text-tesier" data-aos="zoom-in">
               Hello, I'm
             </p>
