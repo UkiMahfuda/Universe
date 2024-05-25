@@ -14,17 +14,17 @@ export const Content = () => {
             <div className="w-1/2 h-0.5 bg-tesier" data-aos="fade-up" data-aos-delay="50"></div>
           </div>
           <div className="grid grid-cols-1 gap-3">
-            <p className="text-gray montserrat text-base sm:text-base xl:text-base" data-aos="fade-up" data-aos-delay="100">
+            <p className="text-gray montserrat text-sm sm:text-base xl:text-base" data-aos="fade-up" data-aos-delay="100">
               Hi There, My name is Akhfee Lauki Mahfuda aka Uki, I am a 6th semester informatics student who has an interest in programming.
             </p>
-            <p className="text-gray montserrat text-base sm:text-sm xl:text-base" data-aos="fade-up" data-aos-delay="150">
+            <p className="text-gray montserrat text-sm sm:text-sm xl:text-base" data-aos="fade-up" data-aos-delay="150">
               As an Informatics student, I am used to working on projects using programming languages. such as project web development and mobile development
             </p>
-            <p className="text-gray montserrat text-base sm:text-sm xl:text-base" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
+            <p className="text-gray montserrat text-sm sm:text-sm xl:text-base" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
               And for now my focus is in the field of <span className="text-tesier">Frontend Development,</span> I have strong knowledge and skills in <span className="text-tesier">Web Programming</span> and{" "}
               <span className="text-tesier">Mobile Programming,</span> especially UI.
             </p>
-            <p className="text-gray montserrat text-base sm:text-sm xl:text-base" data-aos="fade-up" data-aos-delay="250" data-aos-offset="-100">
+            <p className="text-gray montserrat text-sm sm:text-sm xl:text-base" data-aos="fade-up" data-aos-delay="250" data-aos-offset="-100">
               I am committed to continuing to learn and develop, in line with ongoing technological advances, because I believe technology will not stop and will continue to make progress in the technology industry.
             </p>
           </div>
