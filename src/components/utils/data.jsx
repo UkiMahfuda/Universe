@@ -37,7 +37,7 @@ import firebase from "/static/icons/firebase.svg";
 export const NavbarList = [
   {
     name: "Home",
-    link: "/home",
+    link: "/",
   },
   {
     name: "About",
