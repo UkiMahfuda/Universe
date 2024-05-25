@@ -57,7 +57,7 @@ export const ContactList = [
   },
   {
     name: "Linkedin",
-    link: "www.linkedin.com/in/ukimahfuda",
+    link: "https://linkedin.com/in/ukimahfuda",
     icon: <FaLinkedinIn size={23} />,
   },
   {
