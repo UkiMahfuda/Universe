@@ -27,10 +27,10 @@ export const Home = () => {
             <p className="montserrat-bold text-sm sm:text-base text-tesier" data-aos="zoom-in">
               Hello, I'm
             </p>
-            <p className="montserrat-alternates-black mb-3 text-3xl sm:text-4xl lg:text-5xl lg:my-4" data-aos="zoom-in" data-aos-delay="50">
+            <p className="montserrat-alternates-black mb-3 text-3xl sm:text-4xl xl:text-5xl lg:my-4" data-aos="zoom-in" data-aos-delay="50">
               Akhfee Lauki Mahfuda
             </p>
-            <p className="montserrat mb-6 text-sm lg:text-base text-gray" data-aos="zoom-in" data-aos-delay="100">
+            <p className="montserrat mb-6 text-sm xl:text-base text-gray" data-aos="zoom-in" data-aos-delay="100">
               I am a <span className="text-tesier">Frontend Developer</span> with interest in software engineering. I enjoy creating UI displays, especially in Web and Mobile development.
             </p>
             <div data-aos="zoom-in" data-aos-delay="200">
