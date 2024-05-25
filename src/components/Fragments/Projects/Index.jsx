@@ -4,7 +4,7 @@ import img from "/static/images/storyset.svg";
 const Projects = () => {
   return (
     <div className="bg-primary">
-      <div className="flex justify-center items-center md:h-dvh pb-28 md:pb-0  ">
+      <div className="flex justify-center items-center xl:h-dvh pb-28 md:pb-0  ">
         <div className="container flex flex-col items-center">
           <div className="mb-7 w-11/12 lg:w-3/4 mt-24 md:mt-0 ">
             <h1 className="text-white text-lg sm:text-xl montserrat-bold" data-aos="fade-up">
