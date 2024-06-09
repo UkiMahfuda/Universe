@@ -67,7 +67,7 @@ export const ContactList = [
   },
   {
     name: "Email",
-    link: "",
+    link: "mailto:ukimahfuda@gmail.com",
     icon: <MdEmail size={23} />,
   },
 ];

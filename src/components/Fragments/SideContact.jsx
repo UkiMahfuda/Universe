@@ -14,7 +14,7 @@ const SideContact = () => {
         )}
       </div>
       <div data-aos-offset="0" data-aos="fade-up" data-aos-once="true" data-aos-delay="100" className="bg-transparent text-sm lg:text-base px-5 text-white flex-col fixed hidden lg:flex bottom-16 z-50 right-32">
-        <a className="bg-transparent opacity-60  transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" href="">
+        <a className="bg-transparent opacity-60  transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" href="mailto:ukimahfuda@gmail.com" target="_blank">
           ukimahfuda@gmail.com
         </a>
       </div>
