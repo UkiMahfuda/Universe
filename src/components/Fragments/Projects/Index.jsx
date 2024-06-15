@@ -4,9 +4,9 @@ import img from "/static/images/storyset.svg";
 const Projects = () => {
   return (
     <div className="bg-primary">
-      <div className="flex justify-center items-center md:h-dvh pb-28 md:pb-0  ">
+      <div className="flex justify-center items-center  pb-28 md:pb-0  ">
         <div className="container flex flex-col items-center">
-          <div className="mb-7 w-11/12 lg:w-3/4 mt-24 md:mt-0 ">
+          <div className="mb-7 w-11/12 lg:w-3/4 mt-24 md:mt-28 ">
             <h1 className="text-white text-lg sm:text-xl montserrat-bold" data-aos="fade-up">
               Showing My Project's
             </h1>
@@ -32,8 +32,10 @@ const Projects = () => {
               <p className="text-gray montserrat" data-aos="fade-up">
                 So, What are you waiting for?
               </p>
-              <button data-aos="fade-up" className="poppins-semibold text-sm text-tesier outline-2 outline-offset-2 outline w-40 h-10 rounded-full transition-all duration-400 hover:bg-tesier hover:bg-opacity-25">
-                Let's Connect
+              <button className="poppins-semibold text-sm text-tesier outline-2 outline-offset-2 outline w-40 h-10 rounded-full transition-all duration-400 hover:bg-tesier hover:bg-opacity-25">
+                <a href="mailto:ukimahfuda@gmail.com" target="_blank">
+                  Let's Connect
+                </a>
               </button>
             </div>
           </div>

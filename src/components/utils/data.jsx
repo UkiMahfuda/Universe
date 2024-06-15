@@ -37,7 +37,7 @@ import firebase from "/static/icons/firebase.svg";
 export const NavbarList = [
   {
     name: "Home",
-    link: "/home",
+    link: "/",
   },
   {
     name: "About",
@@ -52,22 +52,22 @@ export const NavbarList = [
 export const ContactList = [
   {
     name: "Github",
-    link: "",
+    link: "https://github.com/UkiMahfuda",
     icon: <FaGithub size={23} />,
   },
   {
     name: "Linkedin",
-    link: "",
+    link: "https://linkedin.com/in/ukimahfuda",
     icon: <FaLinkedinIn size={23} />,
   },
   {
     name: "Instagram",
-    link: "",
+    link: "https://instagram.com/uki.mhfda",
     icon: <FaInstagram size={23} />,
   },
   {
     name: "Email",
-    link: "",
+    link: "mailto:ukimahfuda@gmail.com",
     icon: <MdEmail size={23} />,
   },
 ];

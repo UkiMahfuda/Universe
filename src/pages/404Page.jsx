@@ -11,7 +11,7 @@ export const ErrorPage = () => {
           <span className="absolute inset-0 transition-transform translate-x-0.5 rounded-md translate-y-0.5 bg-tesier group-hover:translate-y-0 group-hover:translate-x-0"></span>
 
           <span className="relative block px-8 py-3 bg-secondary rounded-md border border-current">
-            <Link to="/home">Go Home</Link>
+            <Link to="/">Go Home</Link>
           </span>
         </a>
       </button>
