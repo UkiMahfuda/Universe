@@ -11,7 +11,7 @@ const Projects = () => {
               Showing My Project's
             </h1>
             <div className="w-2/3 sm:w-1/2 h-0.5 bg-tesier" data-aos="fade-up" data-aos-delay="50"></div>
-            <p className="mt-3 text-gray montserrat text-sm sm:text-base" data-aos="fade-up" data-aos-delay="100">
+            <p className="mt-3 text-gray montserrat text-sm" data-aos="fade-up" data-aos-delay="100">
               These are all projects I've worked on, using the programming I use.
             </p>
           </div>
@@ -21,15 +21,15 @@ const Projects = () => {
       <div className="h-dvh flex justify-center items-center ">
         <div className="w-11/12 lg:w-3/4 flex md:flex-row">
           <div className="flex flex-col justify-center  md:text-start text-center md:w-1/2">
-            <p className="text-white text-xl md:text-lg  poppins-semibold" data-aos="fade-up">
+            <p className="text-white text-lg  poppins-semibold" data-aos="fade-up">
               And Yeah, One More Thing.
             </p>
             <div className="w-full h-0.5 bg-tesier mb-5" data-aos="fade-up"></div>
             <div className="flex gap-5 flex-col items-center md:items-start">
-              <p className="text-gray montserrat " data-aos="fade-up">
+              <p className="text-gray montserrat sm:text-base text-sm" data-aos="fade-up">
                 <span>One of my life principles is</span> "Appreciate the process, not the result. Your process may not be as fast as other people's, but that doesn't matter, this is not a competition."
               </p>
-              <p className="text-gray montserrat" data-aos="fade-up">
+              <p className="text-gray montserrat sm:text-base text-sm" data-aos="fade-up">
                 So, What are you waiting for?
               </p>
               <button className="poppins-semibold text-sm text-tesier outline-2 outline-offset-2 outline w-40 h-10 rounded-full transition-all duration-400 hover:bg-tesier hover:bg-opacity-25">
