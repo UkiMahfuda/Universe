@@ -2,15 +2,12 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import webbooking from "/static/projects/webbooking/webbooking.svg";
 import mobilebooking from "/static/projects/mobilebooking/mobilebooking.svg";
+import imgstk from "/static/projects/plagiarism/plagiat.png";
 import bookshelf from "/static/projects/bookshelf/bookshelf.svg";
-import web1 from "/static/projects/webbooking/1.svg";
-import web2 from "/static/projects/webbooking/2.svg";
-import web3 from "/static/projects/webbooking/3.svg";
-import web4 from "/static/projects/webbooking/4.svg";
-import web5 from "/static/projects/webbooking/5.svg";
-import bookshelf1 from "/static/projects/bookshelf/bookshelf1.svg";
-import bookshelf2 from "/static/projects/bookshelf/bookshelf2.svg";
-import bookshelf3 from "/static/projects/bookshelf/bookshelf3.svg";
+import vidweb from "/static/projects/webbooking/vid_web.mp4";
+import vidmob from "/static/projects/mobilebooking/vid_mob.mp4";
+import vidstk from "/static/projects/plagiarism/vid_stk.mp4";
+import vidbookshelf from "/static/projects/bookshelf/vid_bookshelf.mp4";
 import html from "/static/icons/html.svg";
 import css from "/static/icons/css.svg";
 import js from "/static/icons/js.svg";
@@ -74,14 +71,27 @@ export const ContactList = [
 
 export const ProjectList = [
   {
+    name: "Plagiarism PDF Checker",
+    slug: "plagiarism_pdf_checker",
+    desc: `
+      Plagiarism PDF Checker is a web application that allows users to upload PDF files and check for plagiarism. 
+      The application uses Python, Flask, and PyPDF2 libraries to perform the necessary tasks. 
+      The application provides a user-friendly interface that allows users to upload and check PDF files. 
+      The application also provides a report with the percentage of similarity between the uploaded files.
+    `.trim(),
+    link: "",
+    repo: "https://github.com/UkiMahfuda/Plagiarism-OCR",
+    image: imgstk,
+    video: vidstk,
+    tech: [python, js, tailwind],
+  },
+  {
     name: "Sistem Peminjaman Ruangan Berbasis Web.",
     slug: "sistem_peminjaman_ruangan_berbasis_web",
     desc: `
       This website was designed and developed as a final assignment in a Web Programming course. 
       The project aimed to demonstrate proficiency in both front-end and back-end development, 
       showcasing a comprehensive understanding of web technologies.
-
-
       
       In building this web application, Laravel 9 was utilized as the primary framework due to its robust features 
       and ease of use for rapid development. MySql was chosen as the database management system for its reliability 
@@ -93,9 +103,9 @@ export const ProjectList = [
       in coding, database management, and user experience design.
     `.trim(),
     link: "",
-    repo: "",
+    repo: "https://github.com/UkiMahfuda/web-pinjam-ruang",
     image: webbooking,
-    imageProject: [web1, web2, web3, web4, web5],
+    video: vidweb,
     tech: [laravel, js, bootstrap, mysql],
   },
   {
@@ -112,9 +122,9 @@ export const ProjectList = [
       emphasizing the importance of integrating modern technologies to create efficient and effective mobile applications.
     `.trim(),
     link: "",
-    repo: "",
+    repo: "https://github.com/UkiMahfuda/mobile_pinjam_ruang",
     image: mobilebooking,
-    imageProject: [web1, web2, web3, web4, web5],
+    video: vidmob,
     tech: [dart, flutter, firebase],
   },
   {
@@ -131,9 +141,9 @@ export const ProjectList = [
       highlighting the practical application of JavaScript for creating dynamic and responsive web applications.
     `.trim(),
     link: "",
-    repo: "",
+    repo: "https://github.com/UkiMahfuda/bookshelf",
     image: bookshelf,
-    imageProject: [bookshelf1, bookshelf2, bookshelf3],
+    video: vidbookshelf,
     tech: [js, tailwind],
   },
 ];
