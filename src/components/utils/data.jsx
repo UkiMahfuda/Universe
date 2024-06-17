@@ -333,8 +333,7 @@ export const certification = [
       },
     ],
   },
-  
-];{
+  {
     course: "Universitas Teknokrat Indonesia",
     desc: [
       {
@@ -343,3 +342,4 @@ export const certification = [
       }
     ],
   },
+];
