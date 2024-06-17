@@ -6,6 +6,7 @@ const About = () => {
   return (
     <div className="bg-primary">
       <Content />
+      <Experience />
       <Skills />
     </div>
   );

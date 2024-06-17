@@ -279,3 +279,58 @@ export const Tools = [
     delay: 100,
   },
 ];
+
+export const education = [
+  {
+    name: "Universitas Teknokrat Indonesia",
+    prodi: "Informatika",
+    tgl: "Sep 2021 - Present",
+    desc: [
+      "I enrolled in the Informatics Engineering program with the motivation that commercial jobs would be replaced by technology in the future, so I decided to pursue this field of study.",
+      "Starting from the fifth semester, I realized that coding was my main goal in pursuing this major. Therefore, I began to learn about programming and fell in love with coding.",
+    ],
+  },
+];
+
+export const award = [
+  {
+    name: "Juara 2 Pemrograman Web ",
+    tempat: "Universitas Teknokrat Indonesia",
+    tgl: "Jan 2024",
+    desc: [
+      "I enrolled in the Informatics Engineering program with the motivation that commercial jobs would be replaced by technology in the future, so I decided to pursue this field of study.",
+      "Starting from the fifth semester, I realized that coding was my main goal in pursuing this major. Therefore, I began to learn about programming and fell in love with coding.",
+    ],
+  },
+];
+export const certification = [
+  {
+    course: "Dicoding Indonesia",
+    desc: [
+      {
+        name: "Learn JavaScript Programming Basics",
+        link: "",
+      },
+      {
+        name: "Learn to Create a Web Front-End for Beginners",
+        link: "",
+      },
+      {
+        name: "Learn Web Programming Basics",
+        link: "",
+      },
+      {
+        name: "Getting Started with Programming Basics to Become a Software Developer",
+        link: "",
+      },
+      {
+        name: "Learn Git Basics with GitHub",
+        link: "",
+      },
+      {
+        name: "Learn Basic Structured Query Language (SQL)",
+        link: "",
+      },
+    ],
+  },
+];

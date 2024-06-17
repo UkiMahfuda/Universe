@@ -1,35 +1,107 @@
+import { useState } from "react";
+import { award, certification, education } from "../../../utils/data";
+
 export const Experience = () => {
+  const [Active, setActive] = useState("education");
+
+  const showEdu = () => {
+    setActive("education");
+  };
+  const showAward = () => {
+    setActive("award");
+  };
+  const showCertifitation = () => {
+    setActive("certification");
+  };
+
   return (
-    <div className="h-dvh bg-primary flex justify-center items-center">
-      <div className=" container flex flex-col items-center ">
-        <div className=" w-full sm:w-10/12 px-5 sm:px-3  h-1/2 " data-aos="fade-up">
-          <h1 className="text-white text-lg sm:text-xl montserrat-bold">My Experience</h1>
+    <div className=" bg-primary flex justify-center  items-center">
+      <div className=" container flex flex-col justify-center items-center">
+        <div className=" w-full sm:w-10/12 px-5 sm:px-3  " data-aos="fade-up">
+          <h1 className="text-white text-lg sm:text-xl montserrat-bold mt-24">My Experience</h1>
           <div className="w-1/2 h-0.5 bg-tesier"></div>
-          <div className="flex justify-center items-center lg:my-10">
-            <div className="flex flex-col lg:flex-row lg:w-9/12 ">
-              <div className="my-5 lg:my-0 poppins-semibold flex lg:flex-col lg:w-1/5 overflow-auto text-gray">
+          <div className="flex justify-center items-center  lg:mt-10">
+            <div className="w-full flex flex-col lg:flex-row  md:w-10/12  md:px-3 h-1/2 ">
+              <div className=" my-5 lg:my-0 poppins-semibold flex lg:flex-col  lg:w-3/12 overflow-auto text-gray">
                 <div data-aos="fade-up" data-aos-delay="50">
-                  <button className="transistion-all duration-300 hover:bg-secondary hover:border-opacity-50  px-5 py-2 md:w-[150px] text-start">Education</button>
+                  <button className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${Active === "education" ? "bg-secondary border-opacity-50" : ""}`} onClick={showEdu}>
+                    Education
+                  </button>
                 </div>
+                {/* <div data-aos="fade-up" data-aos-delay="100">
+                  <button className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${Active === "award" ? "bg-secondary border-opacity-50" : ""}`} onClick={showAward}>
+                    Award
+                  </button>
+                </div> */}
                 <div data-aos="fade-up" data-aos-delay="100">
-                  <button className="transistion-all duration-300 hover:bg-secondary hover:border-opacity-50  px-5 py-2 md:w-[150px] text-start">Award</button>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="100">
-                  <button className="transistion-all duration-300 hover:bg-secondary hover:border-opacity-50  px-5 py-2 md:w-[150px] text-start">Certification</button>
+                  <button
+                    className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${Active === "certification" ? "bg-secondary border-opacity-50" : ""}`}
+                    onClick={showCertifitation}
+                  >
+                    Certification
+                  </button>
                 </div>
               </div>
-              <div className="flex gap-3 flex-col h-[400px] lg:h-[450px] overflow-auto lg:w-4/5 ">
-                <div className="text-lg poppins-semibold">
-                  <p className="text-tesier ">Universitas Teknokrat Indonesia</p>
-                  <p className="text-white">Informatics</p>
+              {Active === "education" && (
+                <div className="flex gap-3 flex-col h-[400px] lg:h-[450px] overflow-auto  lg:w-9/12 ">
+                  {education.map((edu) => (
+                    <div key={edu.name}>
+                      <div className="text-lg poppins-semibold">
+                        <p className="text-tesier ">{edu.name}</p>
+                        <p className="text-white">{edu.prodi}</p>
+                      </div>
+                      <div className="montserrat text-gray flex gap-2 flex-col">
+                        <p className="text-sm xl:text-base">{edu.tgl}</p>
+                        {edu.desc.map((desc, index) => (
+                          <li className="text-sm  xl:text-base" key={index}>
+                            {desc}
+                          </li>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                <div className="montserrat text-gray flex gap-2 flex-col">
-                  <p>Sep 2021 - Present</p>
-                  <li>I enrolled in the Informatics Engineering program with the motivation that commercial jobs would be replaced by technology in the future, so I decided to pursue this field of study.</li>
-                  <li>I enrolled in the Informatics Engineering program with the motivation that commercial jobs would be replaced by technology in the future, so I decided to pursue this field of study.</li>
-                  <li>Starting from the fifth semester, I realized that coding was my main goal in pursuing this major. Therefore, I began to learn about programming and fell in love with coding ✨</li>
+              )}
+              {/* {Active === "award" && (
+                <div className="flex gap-3 flex-col h-[400px] lg:h-[450px] overflow-auto lg:w-9/12 ">
+                  {award.map((award) => (
+                    <div key={award.name}>
+                      <div className="text-lg poppins-semibold">
+                        <p className="text-tesier ">{award.name}</p>
+                        <p className="text-white">{award.tempat}</p>
+                      </div>
+                      <div className="montserrat text-gray flex gap-2 flex-col">
+                        <p className="text-sm  xl:text-base">{award.tgl}</p>
+                        {award.desc.map((desc, index) => (
+                          <li className="text-sm xl:text-base" key={index}>
+                            {desc}
+                          </li>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
+              )} */}
+              {Active === "certification" && (
+                <div className="flex gap-3 flex-col h-[400px] lg:h-[450px] overflow-auto lg:w-9/12 ">
+                  {certification.map((certi) => (
+                    <div key={certi.course}>
+                      <div className="text-lg poppins-semibold">
+                        <p className="text-tesier ">{certi.course}</p>
+                      </div>
+                      <div className="montserrat text-gray flex gap-2 flex-col">
+                        {certi.desc.map((descItem, descIndex) => (
+                          <li key={descIndex}>
+                            <a target="_blank" className="text-sm xl:text-base" href={descItem.link}>
+                              {descItem.name}
+                            </a>
+                          </li>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
