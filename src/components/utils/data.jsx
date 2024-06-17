@@ -1,13 +1,13 @@
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import webbooking from "/static/projects/webbooking/webbooking.svg";
-import mobilebooking from "/static/projects/mobilebooking/mobilebooking.svg";
-import imgstk from "/static/projects/plagiarism/plagiat.png";
-import bookshelf from "/static/projects/bookshelf/bookshelf.svg";
-import vidweb from "/static/projects/webbooking/vid_web.mp4";
-import vidmob from "/static/projects/mobilebooking/vid_mob.mp4";
-import vidstk from "/static/projects/plagiarism/vid_stk.mp4";
-import vidbookshelf from "/static/projects/bookshelf/vid_bookshelf.mp4";
+import img_webpinjam from "/static/projects/webbooking/webbooking.svg";
+import img_mobilepinjam from "/static/projects/mobilebooking/mobilebooking.svg";
+import img_plagiarism from "/static/projects/plagiarism/plagiarism.png";
+import img_bookshelf from "/static/projects/bookshelf/bookshelf.svg";
+import vid_webpinjam from "/static/projects/webbooking/vid_pinjamruang.mp4";
+import vid_mobilepinjam from "/static/projects/mobilebooking/vid_mob.mp4";
+import vid_plagiarism from "/static/projects/plagiarism/vid_plagiarism.mp4";
+import vid_bookshelf from "/static/projects/bookshelf/vid_bookshelf.mp4";
 import html from "/static/icons/html.svg";
 import css from "/static/icons/css.svg";
 import js from "/static/icons/js.svg";
@@ -81,8 +81,8 @@ export const ProjectList = [
     `.trim(),
     link: "",
     repo: "https://github.com/UkiMahfuda/Plagiarism-OCR",
-    image: imgstk,
-    video: vidstk,
+    image: img_plagiarism,
+    video: vid_plagiarism,
     tech: [python, js, tailwind],
   },
   {
@@ -104,8 +104,8 @@ export const ProjectList = [
     `.trim(),
     link: "",
     repo: "https://github.com/UkiMahfuda/web-pinjam-ruang",
-    image: webbooking,
-    video: vidweb,
+    image: img_webpinjam,
+    video: vid_webpinjam,
     tech: [laravel, js, bootstrap, mysql],
   },
   {
@@ -123,8 +123,8 @@ export const ProjectList = [
     `.trim(),
     link: "",
     repo: "https://github.com/UkiMahfuda/mobile_pinjam_ruang",
-    image: mobilebooking,
-    video: vidmob,
+    image: img_mobilepinjam,
+    video: vid_mobilepinjam,
     tech: [dart, flutter, firebase],
   },
   {
@@ -142,8 +142,8 @@ export const ProjectList = [
     `.trim(),
     link: "",
     repo: "https://github.com/UkiMahfuda/bookshelf",
-    image: bookshelf,
-    video: vidbookshelf,
+    image: img_bookshelf,
+    video: vid_bookshelf,
     tech: [js, tailwind],
   },
 ];
