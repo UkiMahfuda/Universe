@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const tooglePopUp = () => {
@@ -13,23 +14,34 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    let scrollTimeout;
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
+      setIsScrolling(true);
+
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        setIsScrolling(false);
+      }, 1000);
     };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimeout);
     };
-  });
+  }, []);
 
   return (
     <Fragment>
       <div
-        className={`grid grid-cols-2 lg:grid-cols-3 bg-primary transition-all bg-transparent duration-300 fixed top-0 left-0 right-0 z-50 text-white 
-      ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""}`}
+        className={`grid grid-cols-2 lg:grid-cols-3 bg-primary transition-all  bg-transparent duration-300 fixed top-0 left-0 right-0 z-50 text-white 
+      ${isScrolled ? "bg-opacity-50 backdrop-blur-sm" : ""} ${isScrolling ? "transform -translate-y-full opacity-0" : ""}`}
       >
         <div className=" bg-transparent px-5 py-5 sm:px-14 sm:py-7" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50">
-          <p className="text-tesier montserrat-alternates-black text-xl bg-transparent hover:animate-pulse transition-all">UkiMahfuda.</p>
+          <p className="text-tesier montserrat-alternates-black text-xl bg-transparent cursor-pointer hover:animate-pulse transition-all">UkiMahfuda.</p>
         </div>
         <div id="topNavbar" className=" rounded-b-md bg-transparent hidden text-gray lg:flex justify-evenly px-14 pt-6 p-3 poppins-semibold" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100">
           {NavbarList.map((list) => (
