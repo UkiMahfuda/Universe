@@ -18,7 +18,7 @@ const Projects = () => {
           <Slider />
         </div>
       </div>
-      <div className="h-screen flex justify-center items-center ">
+      <div className=" h-screen flex justify-center items-center ">
         <div className="w-11/12 lg:w-3/4 flex md:flex-row">
           <div className="flex flex-col justify-center  md:text-start text-center md:w-1/2">
             <p className="text-white text-lg  poppins-semibold" data-aos="fade-up">
@@ -45,6 +45,10 @@ const Projects = () => {
             <img src={img} alt="image" className="w-3/4" />
           </div>
         </div>
+      </div>
+      <div className="text-gray text-sm text-gray text-sm montserrat opacity-75 pb-7 p-20  flex flex-col justify-center items-center ">
+        <p className="">Build and Developed By Akhfee Lauki Mahfuda</p>
+        <p className="">All Rights Reserved | 2024</p>
       </div>
     </div>
   );
