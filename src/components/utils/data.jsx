@@ -294,12 +294,13 @@ export const education = [
 
 export const award = [
   {
-    name: "Juara 2 Pemrograman Web ",
+    name: "2nd Place Web Programming Competition",
     tempat: "Universitas Teknokrat Indonesia",
     tgl: "Jan 2024",
+    link: "https://drive.google.com/file/d/1RyH9W_uldYg1JWTiNgzgZ7e3ATuUDV49/view?usp=drive_link",
     desc: [
-      "I enrolled in the Informatics Engineering program with the motivation that commercial jobs would be replaced by technology in the future, so I decided to pursue this field of study.",
-      "Starting from the fifth semester, I realized that coding was my main goal in pursuing this major. Therefore, I began to learn about programming and fell in love with coding.",
+      "I secured the Second Place in a Web Programming Competition, demonstrating my expertise in building robust web applications using a comprehensive tech stack that includes Laravel, MySQL, and JavaScript.",
+      "This achievement highlights my ability to deliver high-quality, efficient, and scalable solutions in a competitive environment.",
     ],
   },
 ];
@@ -308,28 +309,41 @@ export const certification = [
     course: "Dicoding Indonesia",
     desc: [
       {
+        name: "Cloud Practitioner Essentials (AWS Cloud)",
+        link: "https://www.dicoding.com/certificates/1OP8NG4WQXQK",
+      },
+      {
         name: "Learn JavaScript Programming Basics",
-        link: "",
+        link: "https://www.dicoding.com/certificates/53XEY9KOVPRN",
       },
       {
         name: "Learn to Create a Web Front-End for Beginners",
-        link: "",
+        link: "https://www.dicoding.com/certificates/2VX3OKDWQZYQ",
       },
       {
         name: "Learn Web Programming Basics",
-        link: "",
+        link: "https://www.dicoding.com/certificates/JLX1291Y2Z72",
       },
       {
         name: "Getting Started with Programming Basics to Become a Software Developer",
-        link: "",
+        link: "https://www.dicoding.com/certificates/EYX4YV2O6ZDL",
       },
       {
         name: "Learn Git Basics with GitHub",
-        link: "",
+        link: "https://www.dicoding.com/certificates/98XWVRE6JPM3",
       },
       {
         name: "Learn Basic Structured Query Language (SQL)",
-        link: "",
+        link: "https://www.dicoding.com/certificates/QLZ9R856MP5D",
+      },
+    ],
+  },
+  {
+    course: "Universitas Teknokrat Indonesia",
+    desc: [
+      {
+        name: "Basic Artificial Intelligence",
+        link: "https://drive.google.com/file/d/1_0Xq3Ex_VxhdgkZ5i8NPoWDQ8HLbfpec/view?usp=drive_link",
       },
     ],
   },

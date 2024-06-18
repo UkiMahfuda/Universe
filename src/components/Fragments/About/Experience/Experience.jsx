@@ -28,11 +28,11 @@ export const Experience = () => {
                     Education
                   </button>
                 </div>
-                {/* <div data-aos="fade-up" data-aos-delay="100">
+                <div data-aos="fade-up" data-aos-delay="100">
                   <button className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${Active === "award" ? "bg-secondary border-opacity-50" : ""}`} onClick={showAward}>
                     Award
                   </button>
-                </div> */}
+                </div>
                 <div data-aos="fade-up" data-aos-delay="100">
                   <button
                     className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${Active === "certification" ? "bg-secondary border-opacity-50" : ""}`}
@@ -46,9 +46,9 @@ export const Experience = () => {
                 <div className="flex gap-3 flex-col h-[400px] lg:h-[450px] overflow-auto  lg:w-9/12 ">
                   {education.map((edu) => (
                     <div key={edu.name}>
-                      <div className="text-lg poppins-semibold">
-                        <p className="text-tesier ">{edu.name}</p>
-                        <p className="text-white">{edu.prodi}</p>
+                      <div className="poppins-semibold">
+                        <p className="text-tesier text-lg ">{edu.name}</p>
+                        <p className="text-white text-base">{edu.prodi}</p>
                       </div>
                       <div className="montserrat text-gray flex gap-2 flex-col">
                         <p className="text-sm xl:text-base">{edu.tgl}</p>
@@ -62,13 +62,15 @@ export const Experience = () => {
                   ))}
                 </div>
               )}
-              {/* {Active === "award" && (
+              {Active === "award" && (
                 <div className="flex gap-3 flex-col h-[400px] lg:h-[450px] overflow-auto lg:w-9/12 ">
                   {award.map((award) => (
-                    <div key={award.name}>
-                      <div className="text-lg poppins-semibold">
-                        <p className="text-tesier ">{award.name}</p>
-                        <p className="text-white">{award.tempat}</p>
+                    <div key={award.name} className="mb-5">
+                      <div className=" poppins-semibold">
+                        <a href={award.link} target="_blank" className="text-tesier hover:opacity-65 transition-all text-lg">
+                          {award.name}
+                        </a>
+                        <p className="text-white text-base">{award.tempat}</p>
                       </div>
                       <div className="montserrat text-gray flex gap-2 flex-col">
                         <p className="text-sm  xl:text-base">{award.tgl}</p>
@@ -81,18 +83,18 @@ export const Experience = () => {
                     </div>
                   ))}
                 </div>
-              )} */}
+              )}
               {Active === "certification" && (
                 <div className="flex gap-3 flex-col h-[400px] lg:h-[450px] overflow-auto lg:w-9/12 ">
                   {certification.map((certi) => (
-                    <div key={certi.course}>
+                    <div key={certi.course} className="mb-5">
                       <div className="text-lg poppins-semibold">
                         <p className="text-tesier ">{certi.course}</p>
                       </div>
                       <div className="montserrat text-gray flex gap-2 flex-col">
                         {certi.desc.map((descItem, descIndex) => (
                           <li key={descIndex}>
-                            <a target="_blank" className="text-sm xl:text-base" href={descItem.link}>
+                            <a target="_blank" className="text-sm xl:text-base hover:opacity-65 transition-all" href={descItem.link}>
                               {descItem.name}
                             </a>
                           </li>
