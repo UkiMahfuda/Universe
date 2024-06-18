@@ -46,7 +46,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="text-gray text-sm text-gray text-sm montserrat opacity-75 pb-7 p-20  flex flex-col justify-center items-center ">
+      <div className="text-gray text-center text-[12px] text-gray md:text-sm montserrat opacity-75 pb-16 lg:pb-7 pt-20  flex flex-col justify-center items-center ">
         <p className="">Build and Developed By Akhfee Lauki Mahfuda</p>
         <p className="">All Rights Reserved | 2024</p>
       </div>
