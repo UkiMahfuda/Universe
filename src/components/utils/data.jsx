@@ -347,4 +347,13 @@ export const certification = [
       },
     ],
   },
+  {
+    course: "Universitas Teknokrat Indonesia",
+    desc: [
+      {
+        name: "Basics Artificial Intelligence",
+        link: "",
+      }
+    ],
+  },
 ];
