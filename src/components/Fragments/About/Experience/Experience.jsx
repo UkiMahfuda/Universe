@@ -21,7 +21,7 @@ export const Experience = () => {
           <h1 className="text-white text-lg sm:text-xl montserrat-bold mt-24">My Experience</h1>
           <div className="w-1/2 h-0.5 bg-tesier"></div>
           <div className="flex justify-center items-center  lg:mt-10">
-            <div className="w-full flex flex-col lg:flex-row  md:w-10/12  md:px-3 h-1/2 ">
+            <div className="w-full flex flex-col lg:flex-row  md:w-10/12 mb-10 md:px-3 h-1/2 ">
               <div className=" my-5 lg:my-0 poppins-semibold flex lg:flex-col  lg:w-3/12 overflow-auto text-gray">
                 <div data-aos="fade-up" data-aos-delay="50">
                   <button className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${Active === "education" ? "bg-secondary border-opacity-50" : ""}`} onClick={showEdu}>

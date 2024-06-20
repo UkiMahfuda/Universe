@@ -286,8 +286,10 @@ export const education = [
     prodi: "Informatika",
     tgl: "Sep 2021 - Present",
     desc: [
-      "I enrolled in the Informatics Engineering program with the motivation that commercial jobs would be replaced by technology in the future, so I decided to pursue this field of study.",
-      "Starting from the fifth semester, I realized that coding was my main goal in pursuing this major. Therefore, I began to learn about programming and fell in love with coding.",
+      "I enrolled in the Informatics Engineering program because I believed that commercial jobs would eventually be replaced by technology, so I decided to dive into this field.",
+      "In fourth semester, I realized that coding was my main goal in pursuing this major. So, I started learning programming and quickly fell in love with it.",
+      "I explored different programming languages and the latest technologies by attending workshops, and online courses. These experiences boosted my technical skills and broadened my understanding of tech applications.",
+      "I also got involved in team projects and programming competitions, which taught me the importance of teamwork and effective communication.",
     ],
   },
 ];

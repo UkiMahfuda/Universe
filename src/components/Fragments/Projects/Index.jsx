@@ -6,7 +6,7 @@ const Projects = () => {
     <div className="bg-primary">
       <div className="flex justify-center items-center  pb-28 md:pb-0  ">
         <div className="container flex flex-col items-center">
-          <div className="mb-7 w-11/12 lg:w-3/4 mt-24 md:mt-28 ">
+          <div className="mb-7 w-11/12 lg:w-3/4 mt-28 ">
             <h1 className="text-white text-lg sm:text-xl montserrat-bold" data-aos="fade-up">
               Showing My Project's
             </h1>
