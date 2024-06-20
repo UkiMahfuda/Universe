@@ -5,7 +5,7 @@ export const Content = () => {
   return (
     <div className="relative ">
       <img className=" w-full object-cover object-top h-screen opacity-5" src={background} alt="background" />
-      <div className=" container absolute gap-5 top-[15%] md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 flex justify-evenly flex-wrap lg:flex-nowrap lg:px-24 px-5 sm:px-10 ">
+      <div className=" container absolute gap-5 top-[13%] md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 flex justify-evenly flex-wrap lg:flex-nowrap lg:px-24 px-5 sm:px-10 ">
         <div className=" lg:w-2/3">
           <div className="mb-7">
             <h1 className="text-white text-lg xl:text-xl montserrat-bold" data-aos="fade-up">
