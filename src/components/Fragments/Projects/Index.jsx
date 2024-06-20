@@ -45,7 +45,7 @@ const Projects = () => {
             <img src={img} alt="image" className="w-3/4" />
           </div>
         </div>
-        <div className="mb-14 lg:mb-0 text-gray text-center text-[12px] md:text-sm montserrat opacity-75 flex flex-col justify-center items-center w-full py-2">
+        <div className="mb-14 -mt-14 lg:mt-0 lg:mb-0 text-gray text-center text-[12px] md:text-sm montserrat opacity-75 flex flex-col justify-center items-center w-full py-2">
           <p>Build and Developed By Akhfee Lauki Mahfuda</p>
           <p>All Rights Reserved | 2024</p>
         </div>
