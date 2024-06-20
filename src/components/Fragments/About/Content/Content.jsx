@@ -5,7 +5,7 @@ export const Content = () => {
   return (
     <div className="relative ">
       <img className=" w-full object-cover object-top h-screen opacity-5" src={background} alt="background" />
-      <div className=" container items-center absolute gap-5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-evenly flex-wrap lg:flex-nowrap lg:px-24 py-5 lg:mt-0 px-5 sm:px-10 ">
+      <div className=" container absolute gap-5 top-[15%] md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 flex justify-evenly flex-wrap lg:flex-nowrap lg:px-24 px-5 sm:px-10 ">
         <div className=" lg:w-2/3">
           <div className="mb-7">
             <h1 className="text-white text-lg xl:text-xl montserrat-bold" data-aos="fade-up">
@@ -31,7 +31,7 @@ export const Content = () => {
         </div>
         <div data-aos="fade-up" data-aos-delay="200" data-aos-offset="-150">
           <div className="grayscale transition-all duration-500 hover:grayscale-0">
-            <img src={profile} alt="" className="w-52 h-52 md:w-72 md:h-72" />
+            <img src={profile} alt="" className="w-52 h-52 lg:w-72 lg:h-72" />
           </div>
         </div>
       </div>

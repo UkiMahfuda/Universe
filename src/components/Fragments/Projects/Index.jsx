@@ -18,10 +18,10 @@ const Projects = () => {
           <Slider />
         </div>
       </div>
-      <div className=" h-screen flex justify-center items-center ">
-        <div className="w-11/12 lg:w-3/4 flex md:flex-row">
-          <div className="flex flex-col justify-center  md:text-start text-center md:w-1/2">
-            <p className="text-white text-lg  poppins-semibold" data-aos="fade-up">
+      <div className="h-screen flex flex-col justify-between items-center">
+        <div className="flex-grow flex flex-col justify-center items-center w-11/12 lg:w-3/4 md:flex-row">
+          <div className="flex flex-col justify-center md:text-start text-center md:w-1/2">
+            <p className="text-white text-lg poppins-semibold" data-aos="fade-up">
               And Yeah, One More Thing.
             </p>
             <div className="w-full h-0.5 bg-tesier mb-5" data-aos="fade-up"></div>
@@ -41,15 +41,20 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="md:flex flex-col items-center  hidden w-1/2" data-aos="fade-up" data-aos-delay="50">
+          <div className="md:flex flex-col items-center hidden w-1/2" data-aos="fade-up" data-aos-delay="50">
             <img src={img} alt="image" className="w-3/4" />
           </div>
         </div>
+        <div className="mb-14 lg:mb-0 text-gray text-center text-[12px] md:text-sm montserrat opacity-75 flex flex-col justify-center items-center w-full py-2">
+          <p>Build and Developed By Akhfee Lauki Mahfuda</p>
+          <p>All Rights Reserved | 2024</p>
+        </div>
       </div>
-      <div className="text-gray text-center text-[12px]  md:text-sm montserrat opacity-75 pb-16 lg:pb-7 pt-20  flex flex-col justify-center items-center ">
+
+      {/* <div className="text-gray text-center text-[12px]  md:text-sm montserrat opacity-75 pb-16 lg:pb-7 pt-20  flex flex-col justify-center items-center ">
         <p className="">Build and Developed By Akhfee Lauki Mahfuda</p>
         <p className="">All Rights Reserved | 2024</p>
-      </div>
+      </div> */}
     </div>
   );
 };

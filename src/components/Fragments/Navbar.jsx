@@ -23,7 +23,7 @@ const Navbar = () => {
       clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(() => {
         setIsScrolling(false);
-      }, 1000);
+      }, 500);
     };
 
     window.addEventListener("scroll", handleScroll);
