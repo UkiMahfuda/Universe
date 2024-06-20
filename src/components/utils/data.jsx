@@ -1,13 +1,21 @@
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import img_webpinjam from "/static/projects/webbooking/webbooking.svg";
-import img_mobilepinjam from "/static/projects/mobilebooking/mobilebooking.svg";
+
+//img
 import img_plagiarism from "/static/projects/plagiarism/plagiarism.png";
+import img_mobilepinjam from "/static/projects/mobilebooking/mobilebooking.svg";
+import img_webpinjam from "/static/projects/webbooking/webbooking.svg";
+import img_porto from "/static/projects/portfolio/porto.png";
 import img_bookshelf from "/static/projects/bookshelf/bookshelf.svg";
-import vid_webpinjam from "/static/projects/webbooking/vid_pinjamruang.mp4";
-import vid_mobilepinjam from "/static/projects/mobilebooking/vid_mob.mp4";
+
+//vid
 import vid_plagiarism from "/static/projects/plagiarism/vid_plagiarism.mp4";
+import vid_mobilepinjam from "/static/projects/mobilebooking/vid_mob.mp4";
+import vid_webpinjam from "/static/projects/webbooking/vid_pinjamruang.mp4";
+import vid_porto from "/static/projects/portfolio/vid-porto.mp4";
 import vid_bookshelf from "/static/projects/bookshelf/vid_bookshelf.mp4";
+
+//icon
 import html from "/static/icons/html.svg";
 import css from "/static/icons/css.svg";
 import js from "/static/icons/js.svg";
@@ -86,6 +94,25 @@ export const ProjectList = [
     tech: [python, js, tailwind],
   },
   {
+    name: "Sistem Peminjaman Ruangan Berbasis Mobile.",
+    slug: "sistem_peminjaman_ruangan_berbasis_mobile",
+    desc: `
+      This apps was designed and developed as a final assignment in a Mobile Programming course. 
+      The app was developed using Firebase to manage the database, ensuring seamless data integration 
+      and real-time updates. Firebase was chosen for its robust capabilities, including authentication, 
+      cloud storage, and hosting, making it an ideal solution for mobile applications.
+
+      The project highlights key aspects of mobile development, such as responsive design, user-friendly interfaces, 
+      and efficient data handling. This assignment showcases the practical application of skills learned during the course, 
+      emphasizing the importance of integrating modern technologies to create efficient and effective mobile applications.
+    `.trim(),
+    link: "",
+    repo: "https://github.com/UkiMahfuda/mobile_pinjam_ruang",
+    image: img_mobilepinjam,
+    video: vid_mobilepinjam,
+    tech: [dart, flutter, firebase],
+  },
+  {
     name: "Sistem Peminjaman Ruangan Berbasis Web.",
     slug: "sistem_peminjaman_ruangan_berbasis_web",
     desc: `
@@ -93,6 +120,7 @@ export const ProjectList = [
       The project aimed to demonstrate proficiency in both front-end and back-end development, 
       showcasing a comprehensive understanding of web technologies.
       
+       
       In building this web application, Laravel 9 was utilized as the primary framework due to its robust features 
       and ease of use for rapid development. MySql was chosen as the database management system for its reliability 
       and performance in handling complex queries and large datasets.
@@ -109,23 +137,18 @@ export const ProjectList = [
     tech: [laravel, js, bootstrap, mysql],
   },
   {
-    name: "Sistem Peminjaman Ruangan Berbasis Mobile.",
-    slug: "sistem_peminjaman_ruangan_berbasis_mobile",
+    name: "Web Portfolio",
+    slug: "web_portfolio",
     desc: `
-      This website was designed and developed as a final assignment in a Mobile Programming course. 
-      The app was developed using Firebase to manage the database, ensuring seamless data integration 
-      and real-time updates. Firebase was chosen for its robust capabilities, including authentication, 
-      cloud storage, and hosting, making it an ideal solution for mobile applications.
+    Over the past month and a half, I developed a web portfolio using ReactJS and Tailwind CSS. This portfolio showcases my work with a responsive and aesthetic interface. ReactJS provides dynamism, while Tailwind CSS offers a modern style, resulting in a smooth and engaging user experience.
 
-      The project highlights key aspects of mobile development, such as responsive design, user-friendly interfaces, 
-      and efficient data handling. This assignment showcases the practical application of skills learned during the course, 
-      emphasizing the importance of integrating modern technologies to create efficient and effective mobile applications.
+    The portfolio includes sections for home, about me, project portfolio, and contact. The home page features a brief summary of myself and my skills. The project portfolio section displays projects with descriptions and links. The contact page provides an intuitive form for reaching out to me.
     `.trim(),
     link: "",
-    repo: "https://github.com/UkiMahfuda/mobile_pinjam_ruang",
-    image: img_mobilepinjam,
-    video: vid_mobilepinjam,
-    tech: [dart, flutter, firebase],
+    repo: "",
+    image: img_porto,
+    video: vid_porto,
+    tech: [reactjs, tailwind],
   },
   {
     name: "Bookshelf Apps.",
