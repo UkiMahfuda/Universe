@@ -17,7 +17,7 @@ export const Experience = () => {
   return (
     <div className=" bg-primary flex justify-center  items-center">
       <div className=" container flex flex-col justify-center items-center">
-        <div className=" w-full sm:w-10/12 px-5 sm:px-3  " data-aos="fade-up">
+        <div className=" w-full sm:w-10/12 px-5 sm:px-3 " data-aos="fade-up">
           <h1 className="text-white text-lg sm:text-xl montserrat-bold mt-24">My Experience</h1>
           <div className="w-1/2 h-0.5 bg-tesier"></div>
           <div className="flex justify-center items-center  lg:mt-10">
