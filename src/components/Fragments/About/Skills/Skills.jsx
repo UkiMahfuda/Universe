@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { ButtonMenu } from "../../../Elements/BtnMenu";
 import { TechStack, Tools } from "../../../utils/data";
 
 export const Skills = () => {
-  const [active, setActive] = useState("stack");
+  const [Active, setActive] = useState("stack");
 
   const showStack = () => {
     setActive("stack");
@@ -19,18 +20,18 @@ export const Skills = () => {
           <div className="w-1/2 h-0.5 bg-tesier"></div>
           <div className="my-7 poppins-semibold flex  text-gray">
             <div data-aos="fade-up" data-aos-delay="50">
-              <button onClick={showStack} className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${active === "stack" ? "bg-secondary border-opacity-50" : ""}`}>
+              <ButtonMenu onClick={showStack} classname={`${Active === "stack" ? "bg-secondary border-opacity-50" : ""}`}>
                 Tech Stack
-              </button>
+              </ButtonMenu>
             </div>
             <div data-aos="fade-up" data-aos-delay="100">
-              <button onClick={showTools} className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${active === "tools" ? "bg-secondary border-opacity-50" : ""}`}>
+              <ButtonMenu onClick={showTools} classname={`${Active === "tools" ? "bg-secondary border-opacity-50" : ""}`}>
                 Tools
-              </button>
+              </ButtonMenu>
             </div>
           </div>
         </div>
-        {active === "stack" && (
+        {Active === "stack" && (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 rounded-xl sm:px-0 px-8 w-full sm:w-9/12">
             {TechStack.map((stack) => (
               <div data-aos="fade-up" data-aos-delay={stack.delay} key={stack.name} data-aos-offset="0">
@@ -45,7 +46,7 @@ export const Skills = () => {
             ))}
           </div>
         )}
-        {active === "tools" && (
+        {Active === "tools" && (
           <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 rounded-xl sm:px-0 px-8 w-full sm:w-9/12">
             {Tools.map((tools) => (
               <div data-aos="fade-up" data-aos-delay={tools.delay} key={tools.name} data-aos-offset="0">

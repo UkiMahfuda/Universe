@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ButtonMenu } from "../../../Elements/BtnMenu";
 import { award, certification, education } from "../../../utils/data";
 
 export const Experience = () => {
@@ -10,7 +11,7 @@ export const Experience = () => {
   const showAward = () => {
     setActive("award");
   };
-  const showCertifitation = () => {
+  const showCertification = () => {
     setActive("certification");
   };
 
@@ -24,22 +25,19 @@ export const Experience = () => {
             <div className="w-full flex flex-col lg:flex-row  md:w-10/12 mb-10 md:px-3 h-1/2 ">
               <div className=" my-5 lg:my-0 poppins-semibold flex lg:flex-col  lg:w-3/12 overflow-auto text-gray">
                 <div data-aos="fade-up" data-aos-delay="50">
-                  <button className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${Active === "education" ? "bg-secondary border-opacity-50" : ""}`} onClick={showEdu}>
+                  <ButtonMenu onClick={showEdu} classname={`${Active === "education" ? "bg-secondary border-opacity-50" : ""}`}>
                     Education
-                  </button>
+                  </ButtonMenu>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="100">
-                  <button className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${Active === "award" ? "bg-secondary border-opacity-50" : ""}`} onClick={showAward}>
+                <div data-aos="fade-up" data-aos-delay="75">
+                  <ButtonMenu onClick={showAward} classname={`${Active === "award" ? "bg-secondary border-opacity-50" : ""}`}>
                     Award
-                  </button>
+                  </ButtonMenu>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="100">
-                  <button
-                    className={`transistion-all duration-300 hover:bg-secondary hover:border-opacity-50 px-5 py-2 w-[150px] text-start ${Active === "certification" ? "bg-secondary border-opacity-50" : ""}`}
-                    onClick={showCertifitation}
-                  >
+                  <ButtonMenu onClick={showCertification} classname={`${Active === "certification" ? "bg-secondary border-opacity-50" : ""}`}>
                     Certification
-                  </button>
+                  </ButtonMenu>
                 </div>
               </div>
               {Active === "education" && (
