@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import BtnNavbar from "../Elements/BtnNavbar";
+import BtnNavbar from "./BtnNavbar";
 import { ContactList, NavbarList } from "../utils/data";
 import { GrContactInfo } from "react-icons/gr";
 import { motion } from "framer-motion";

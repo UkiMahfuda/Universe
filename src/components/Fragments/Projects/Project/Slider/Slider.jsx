@@ -1,7 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/sea-green";
 import { Link } from "react-router-dom";
-import { ProjectList } from "../../../utils/data";
+import { ProjectList } from "../../../../utils/data";
 
 const Slider = () => {
   return (

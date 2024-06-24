@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import Navbar from "../Fragments/Navbar";
-import SideContact from "../Fragments/SideContact";
+import Navbar from "../Elements/Navbar";
+import SideContact from "../Elements/SideContact";
 
 const Layouts = (props) => {
   const { children } = props;

@@ -77,100 +77,6 @@ export const ContactList = [
   },
 ];
 
-export const ProjectList = [
-  {
-    name: "Plagiarism PDF Checker",
-    slug: "plagiarism_pdf_checker",
-    desc: `
-      Plagiarism PDF Checker is a web application that allows users to upload PDF files and check for plagiarism. 
-      The application uses Python, Flask, and PyPDF2 libraries to perform the necessary tasks. 
-      The application provides a user-friendly interface that allows users to upload and check PDF files. 
-      The application also provides a report with the percentage of similarity between the uploaded files.
-    `.trim(),
-    link: "",
-    repo: "https://github.com/UkiMahfuda/Plagiarism-OCR",
-    image: img_plagiarism,
-    video: vid_plagiarism,
-    tech: [python, js, tailwind],
-  },
-  {
-    name: "Sistem Peminjaman Ruangan Berbasis Mobile.",
-    slug: "sistem_peminjaman_ruangan_berbasis_mobile",
-    desc: `
-      This apps was designed and developed as a final assignment in a Mobile Programming course. 
-      The app was developed using Firebase to manage the database, ensuring seamless data integration 
-      and real-time updates. Firebase was chosen for its robust capabilities, including authentication, 
-      cloud storage, and hosting, making it an ideal solution for mobile applications.
-
-      The project highlights key aspects of mobile development, such as responsive design, user-friendly interfaces, 
-      and efficient data handling. This assignment showcases the practical application of skills learned during the course, 
-      emphasizing the importance of integrating modern technologies to create efficient and effective mobile applications.
-    `.trim(),
-    link: "",
-    repo: "https://github.com/UkiMahfuda/mobile_pinjam_ruang",
-    image: img_mobilepinjam,
-    video: vid_mobilepinjam,
-    tech: [dart, flutter, firebase],
-  },
-  {
-    name: "Sistem Peminjaman Ruangan Berbasis Web.",
-    slug: "sistem_peminjaman_ruangan_berbasis_web",
-    desc: `
-      This website was designed and developed as a final assignment in a Web Programming course. 
-      The project aimed to demonstrate proficiency in both front-end and back-end development, 
-      showcasing a comprehensive understanding of web technologies.
-      
-       
-      In building this web application, Laravel 9 was utilized as the primary framework due to its robust features 
-      and ease of use for rapid development. MySql was chosen as the database management system for its reliability 
-      and performance in handling complex queries and large datasets.
-
-      The website incorporates responsive design principles to ensure accessibility across various devices, 
-      and includes features such as user authentication, dynamic content management, and interactive user interfaces. 
-      This project represents a culmination of the skills and knowledge acquired throughout the course, emphasizing best practices 
-      in coding, database management, and user experience design.
-    `.trim(),
-    link: "",
-    repo: "https://github.com/UkiMahfuda/web-pinjam-ruang",
-    image: img_webpinjam,
-    video: vid_webpinjam,
-    tech: [laravel, js, bootstrap, mysql],
-  },
-  {
-    name: "Web Portfolio",
-    slug: "web_portfolio",
-    desc: `
-    Over the past month and a half, I developed a web portfolio using ReactJS and Tailwind CSS. This portfolio showcases my work with a responsive and aesthetic interface. ReactJS provides dynamism, while Tailwind CSS offers a modern style, resulting in a smooth and engaging user experience.
-
-    The portfolio includes sections for home, about me, project portfolio, and contact. The home page features a brief summary of myself and my skills. The project portfolio section displays projects with descriptions and links. The contact page provides an intuitive form for reaching out to me.
-    `.trim(),
-    link: "",
-    repo: "",
-    image: img_porto,
-    video: vid_porto,
-    tech: [reactjs, tailwind],
-  },
-  {
-    name: "Bookshelf Apps.",
-    slug: "bookshelf_apps",
-    desc: `
-      This app is a final course project designed to create a front-end web application for beginners. 
-      In this app, users can add and delete books, providing a simple yet effective way to manage a book collection.
-
-      The development focuses on using DOM manipulation to dynamically organize content and local storage to persist data. 
-      These techniques allow for an interactive user experience and demonstrate fundamental web development skills.
-
-      This project serves as an introduction to essential concepts in front-end development, 
-      highlighting the practical application of JavaScript for creating dynamic and responsive web applications.
-    `.trim(),
-    link: "",
-    repo: "https://github.com/UkiMahfuda/bookshelf",
-    image: img_bookshelf,
-    video: vid_bookshelf,
-    tech: [js, tailwind],
-  },
-];
-
 export const TechStack = [
   {
     name: "HTML",
@@ -300,6 +206,100 @@ export const Tools = [
     image: github,
     option: "Version Control",
     delay: 100,
+  },
+];
+
+export const ProjectList = [
+  {
+    name: "Plagiarism PDF Checker",
+    slug: "plagiarism_pdf_checker",
+    desc: `
+      Plagiarism PDF Checker is a web application that allows users to upload PDF files and check for plagiarism. 
+      The application uses Python, Flask, and PyPDF2 libraries to perform the necessary tasks. 
+      The application provides a user-friendly interface that allows users to upload and check PDF files. 
+      The application also provides a report with the percentage of similarity between the uploaded files.
+    `.trim(),
+    link: "",
+    repo: "https://github.com/UkiMahfuda/Plagiarism-OCR",
+    image: img_plagiarism,
+    video: vid_plagiarism,
+    tech: [python, js, tailwind],
+  },
+  {
+    name: "Sistem Peminjaman Ruangan Berbasis Mobile.",
+    slug: "sistem_peminjaman_ruangan_berbasis_mobile",
+    desc: `
+      This apps was designed and developed as a final assignment in a Mobile Programming course. 
+      The app was developed using Firebase to manage the database, ensuring seamless data integration 
+      and real-time updates. Firebase was chosen for its robust capabilities, including authentication, 
+      cloud storage, and hosting, making it an ideal solution for mobile applications.
+
+      The project highlights key aspects of mobile development, such as responsive design, user-friendly interfaces, 
+      and efficient data handling. This assignment showcases the practical application of skills learned during the course, 
+      emphasizing the importance of integrating modern technologies to create efficient and effective mobile applications.
+    `.trim(),
+    link: "",
+    repo: "https://github.com/UkiMahfuda/mobile_pinjam_ruang",
+    image: img_mobilepinjam,
+    video: vid_mobilepinjam,
+    tech: [dart, flutter, firebase],
+  },
+  {
+    name: "Sistem Peminjaman Ruangan Berbasis Web.",
+    slug: "sistem_peminjaman_ruangan_berbasis_web",
+    desc: `
+      This website was designed and developed as a final assignment in a Web Programming course. 
+      The project aimed to demonstrate proficiency in both front-end and back-end development, 
+      showcasing a comprehensive understanding of web technologies.
+      
+       
+      In building this web application, Laravel 9 was utilized as the primary framework due to its robust features 
+      and ease of use for rapid development. MySql was chosen as the database management system for its reliability 
+      and performance in handling complex queries and large datasets.
+
+      The website incorporates responsive design principles to ensure accessibility across various devices, 
+      and includes features such as user authentication, dynamic content management, and interactive user interfaces. 
+      This project represents a culmination of the skills and knowledge acquired throughout the course, emphasizing best practices 
+      in coding, database management, and user experience design.
+    `.trim(),
+    link: "",
+    repo: "https://github.com/UkiMahfuda/web-pinjam-ruang",
+    image: img_webpinjam,
+    video: vid_webpinjam,
+    tech: [laravel, js, bootstrap, mysql],
+  },
+  {
+    name: "Web Portfolio",
+    slug: "web_portfolio",
+    desc: `
+    Over the past month and a half, I developed a web portfolio using ReactJS and Tailwind CSS. This portfolio showcases my work with a responsive and aesthetic interface. ReactJS provides dynamism, while Tailwind CSS offers a modern style, resulting in a smooth and engaging user experience.
+
+    The portfolio includes sections for home, about me, project portfolio, and contact. The home page features a brief summary of myself and my skills. The project portfolio section displays projects with descriptions and links. The contact page provides an intuitive form for reaching out to me.
+    `.trim(),
+    link: "",
+    repo: "",
+    image: img_porto,
+    video: vid_porto,
+    tech: [reactjs, tailwind],
+  },
+  {
+    name: "Bookshelf Apps.",
+    slug: "bookshelf_apps",
+    desc: `
+      This app is a final course project designed to create a front-end web application for beginners. 
+      In this app, users can add and delete books, providing a simple yet effective way to manage a book collection.
+
+      The development focuses on using DOM manipulation to dynamically organize content and local storage to persist data. 
+      These techniques allow for an interactive user experience and demonstrate fundamental web development skills.
+
+      This project serves as an introduction to essential concepts in front-end development, 
+      highlighting the practical application of JavaScript for creating dynamic and responsive web applications.
+    `.trim(),
+    link: "",
+    repo: "https://github.com/UkiMahfuda/bookshelf",
+    image: img_bookshelf,
+    video: vid_bookshelf,
+    tech: [js, tailwind],
   },
 ];
 
