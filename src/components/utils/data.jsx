@@ -1,21 +1,18 @@
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-//img
 import img_plagiarism from "/static/projects/plagiarism/plagiarism.png";
 import img_mobilepinjam from "/static/projects/mobilebooking/mobilebooking.svg";
 import img_webpinjam from "/static/projects/webbooking/webbooking.svg";
 import img_porto from "/static/projects/portfolio/porto.png";
 import img_bookshelf from "/static/projects/bookshelf/bookshelf.svg";
 
-//vid
 import vid_plagiarism from "/static/projects/plagiarism/vid_plagiarism.mp4";
 import vid_mobilepinjam from "/static/projects/mobilebooking/vid_mob.mp4";
 import vid_webpinjam from "/static/projects/webbooking/vid_pinjamruang.mp4";
 import vid_porto from "/static/projects/portfolio/vid-porto.mp4";
 import vid_bookshelf from "/static/projects/bookshelf/vid_bookshelf.mp4";
 
-//icon
 import html from "/static/icons/html.svg";
 import css from "/static/icons/css.svg";
 import js from "/static/icons/js.svg";

@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { ProjectList } from "../utils/data";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { FiGithub } from "react-icons/fi";
-import { GoLinkExternal } from "react-icons/go";
 
 const Desc = () => {
   const params = useParams();
@@ -28,9 +27,6 @@ const Desc = () => {
               <a target="_blank" data-aos="fade-up" data-aos-delay="100" href={project.repo} className="hover:text-tesier transition-all">
                 <FiGithub size={23} />
               </a>
-              {/* <a data-aos="fade-up" data-aos-delay="100" href={project.link} className="hover:text-tesier transition-all">
-                <GoLinkExternal size={23} />
-              </a> */}
             </div>
           </div>
         </div>

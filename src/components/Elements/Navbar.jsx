@@ -9,10 +9,6 @@ const Navbar = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  const tooglePopUp = () => {
-    setIsOpen(!isOpen);
-  };
-
   useEffect(() => {
     let scrollTimeout;
 
@@ -50,24 +46,6 @@ const Navbar = () => {
             </BtnNavbar>
           ))}
         </div>
-        {/* <button onClick={tooglePopUp} className="flex justify-end px-5 py-5 sm:py-7 sm:px-14 lg:hidden" data-aos="fade-down" data-aos-duration="500">
-          <GrContactInfo size={30} className="text-tesier " />
-        </button>
-        {isOpen && (
-          <div className="fixed top-16 right-5 sm:right-14 bg-gray-800 bg-opacity-50 flex lg:hidden items-center justify-center">
-            <div className="bg-secondary p-6  rounded-2xl shadow-xl ">
-              <h2 className="text-base text-gray poppins-semibold mb-4">Let's Connect !</h2>
-              {ContactList.map((list) => (
-                <a className="opacity-60 flex justify-center my-6 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" key={list.name} href={list.link}>
-                  {list.icon}
-                </a>
-              ))}
-              <a className="opacity-60 flex justify-center mb-2 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" href="">
-                ukimahfuda@gmail.com
-              </a>
-            </div>
-          </div>
-        )} */}
       </div>
 
       <div className="fixed bottom-20 z-50 right-5 lg:hidden transition-all duration-300" data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
