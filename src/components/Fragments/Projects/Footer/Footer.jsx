@@ -17,11 +17,9 @@ export const Footer = () => {
               So, What are you waiting for?
             </p>
             <div data-aos="fade-up">
-              <button className="poppins-semibold text-sm text-tesier outline-2 outline-offset-2 outline w-40 h-10 rounded-full transition-all duration-400 hover:bg-tesier hover:bg-opacity-25">
-                <a href="mailto:ukimahfuda@gmail.com" target="_blank">
-                  Let's Connect
-                </a>
-              </button>
+              <a href="mailto:ukimahfuda@gmail.com" target="_blank">
+                <button className="poppins-semibold text-sm text-tesier outline-2 outline-offset-2 outline w-40 h-10 rounded-full transition-all duration-400 hover:bg-tesier hover:bg-opacity-25">Let's Connect</button>
+              </a>
             </div>
           </div>
         </div>

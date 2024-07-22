@@ -34,11 +34,9 @@ export const Home = () => {
               I am a <span className="text-tesier">Frontend Developer</span> with interest in software engineering. I enjoy creating UI displays, especially in Web and Mobile development.
             </p>
             <div data-aos="zoom-in" data-aos-delay="200">
-              <button className="poppins-semibold text-sm text-tesier outline-2 outline-offset-2 outline w-40 h-10 rounded-full transition-all duration-400 hover:bg-tesier hover:bg-opacity-25">
-                <a href="https://drive.google.com/file/d/1A597updYbHNlDscmj6qr87BTMO-38Pfy/view?usp=drivesdk" target="_blank">
-                  View My CV
-                </a>
-              </button>
+              <a href="https://drive.google.com/file/d/1A597updYbHNlDscmj6qr87BTMO-38Pfy/view?usp=drivesdk" target="_blank">
+                <button className="poppins-semibold text-sm text-tesier outline-2 outline-offset-2 outline w-40 h-10 rounded-full transition-all duration-400 hover:bg-tesier hover:bg-opacity-25">View My CV</button>
+              </a>
             </div>
           </div>
         </div>
