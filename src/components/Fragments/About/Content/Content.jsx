@@ -15,7 +15,7 @@ export const Content = () => {
           </div>
           <div className="grid grid-cols-1 gap-3">
             <p className="text-gray montserrat text-sm xl:text-base" data-aos="fade-up" data-aos-delay="100">
-              Hi There, My name is Akhfee Lauki Mahfuda aka Uki, I am a 6th semester informatics student who has an interest in programming.
+              Hi There, My name is Akhfee Lauki Mahfuda aka Uki, I am a 7th semester informatics student who has an interest in programming.
             </p>
             <p className="text-gray montserrat text-sm  xl:text-base" data-aos="fade-up" data-aos-delay="150">
               As an Informatics student, I am used to working on projects using programming languages. such as project web development and mobile development

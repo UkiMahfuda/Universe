@@ -302,8 +302,8 @@ export const ProjectList = [
 
 export const education = [
   {
-    name: "Universitas Teknokrat Indonesia",
-    prodi: "Informatika",
+    name: "Universitas Teknokrat Indonesia.",
+    prodi: "Bachelor's Degree in Informatics.",
     tgl: "Sep 2021 - Present",
     desc: [
       "I enrolled in the Informatics Engineering program because I believed that commercial jobs would eventually be replaced by technology, so I decided to dive into this field.",
@@ -316,8 +316,8 @@ export const education = [
 
 export const award = [
   {
-    name: "2nd Place Web Programming Competition",
-    tempat: "Universitas Teknokrat Indonesia",
+    name: "2nd Place Web Programming Competition.",
+    tempat: "Universitas Teknokrat Indonesia.",
     tgl: "Jan 2024",
     link: "https://drive.google.com/file/d/1RyH9W_uldYg1JWTiNgzgZ7e3ATuUDV49/view?usp=drive_link",
     desc: [
@@ -328,7 +328,7 @@ export const award = [
 ];
 export const certification = [
   {
-    course: "Dicoding Indonesia",
+    course: "Dicoding Indonesia.",
     desc: [
       {
         name: "Cloud Practitioner Essentials (AWS Cloud)",
@@ -361,7 +361,7 @@ export const certification = [
     ],
   },
   {
-    course: "Universitas Teknokrat Indonesia",
+    course: "Universitas Teknokrat Indonesia.",
     desc: [
       {
         name: "Basic Artificial Intelligence",
