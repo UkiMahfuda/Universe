@@ -60,7 +60,7 @@ const Navbar = () => {
             <GrContactInfo size={30} className="text-tesier" />
             <motion.div layout className="py-10 gap-y-3 flex flex-col">
               {ContactList.map((list) => (
-                <a className="opacity-60  justify-center text-gray py-3 px-1 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" key={list.name} href={list.link}>
+                <a aria-label={list.name}  className="opacity-60  justify-center text-gray py-3 px-1 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" key={list.name} href={list.link}>
                   {list.icon}
                 </a>
               ))}
