@@ -7,7 +7,7 @@ const SideContact = () => {
         {ContactList.map(
           (list, index) =>
             index !== ContactList.length - 1 && (
-              <a target="_blank" className="bg-transparent group opacity-60 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" key={list.name} href={list.link}>
+              <a target="_blank" aria-label={list.name} className="bg-transparent group opacity-60 transition-all duration-300 hover:-translate-y-1.5 hover:text-tesier hover:opacity-100" key={list.name} href={list.link}>
                 {list.icon}
               </a>
             )
