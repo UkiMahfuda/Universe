@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="flex-grow flex flex-col justify-center items-center w-11/12 lg:w-3/4 md:flex-row">
         <div className="flex flex-col justify-center md:text-start text-center md:w-1/2">
           <p className="text-white text-lg poppins-semibold" data-aos="fade-up">
-            And Yeah, One More Thing.
+            And Yaa, One More Thing.
           </p>
           <div className="w-full h-0.5 bg-tesier mb-5" data-aos="fade-up"></div>
           <div className="flex gap-5 flex-col items-center md:items-start">

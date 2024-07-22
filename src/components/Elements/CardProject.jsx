@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 const CardProject = (props) => {
   const { children } = props;
-  return <div className="group transition-all lg:duration-300 my-1 hover:-translate-y-1 border-2 lg:mx-3 overflow-hidden border-opacity-50 rounded-lg border-gray flex flex-col gap-3">{children}</div>;
+  return <div className="group transition-all lg:duration-300 my-1 border-2 lg:mx-3 overflow-hidden border-opacity-50 rounded-lg border-gray flex flex-col gap-3">{children}</div>;
 };
 
 const Image = (props) => {
   const { slug, image } = props;
   return (
     <Link to={`/project/desc/${slug}`}>
-      <div className="w-full h-[175px] group-hover:opacity-65 opacity-100 transition-all ">
+      <div className="w-full h-[175px] group-hover:opacity-65 group-hover:scale-105 opacity-100 transition-all ">
         <img src={image} alt="Image 2" className="h-full object-cover w-full object-top" />
       </div>
     </Link>
