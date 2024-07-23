@@ -1,8 +1,9 @@
 import { Fragment } from "react";
 import { useParams } from "react-router-dom";
-import { ProjectList } from "../utils/data";
+import { ProjectList } from "../../../utils/data";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { FiGithub } from "react-icons/fi";
+import Video from "./video";
 
 const Desc = () => {
   const params = useParams();
@@ -32,24 +33,18 @@ const Desc = () => {
         </div>
         <div className=" flex items-center justify-center py-10">
           <div className="w-11/12 lg:w-[70%] flex flex-col gap-5">
-            <div data-aos="fade-up" data-aos-delay="175" className=" h-[225px] flex justify-center">
-              <video className="h-[225px]" autoPlay loop muted>
-                <source src={project.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+            <Video />
             <div className="flex flex-col-reverse lg:flex-row gap-5 lg:gap-3">
               <div className="flex flex-col gap-3 lg:gap-1 lg:w-3/5 px-3">
                 <h2 data-aos="fade-up" data-aos-delay="200" className="text-white text-xl montserrat-bold">
                   Description
                 </h2>
-
                 {project.desc.split("\n\n ").map((paragraph, i) => (
                   <p data-aos="fade-up" data-aos-delay="250" data-aos-offset="100" className="text-gray indent-8 " key={i}>
                     {paragraph.trim()}
                   </p>
                 ))}
-              </div>{" "}
+              </div>
               <div className="flex flex-col gap-3 lg:gap-1 lg:w-2/5 px-3">
                 <h2 data-aos="fade-up" data-aos-delay="200" className="text-white text-xl montserrat-bold">
                   Tech Stack

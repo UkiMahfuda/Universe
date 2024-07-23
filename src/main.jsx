@@ -1,30 +1,48 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import HomePage from "./pages/homePage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AboutPage from "./pages/aboutPage";
-import ProjectPage from "./pages/projectPage";
 import { ErrorPage } from "./pages/404Page";
-import DescPage from "./pages/descPage";
+import Spinner from "./components/Elements/Spinner";
+
+const LazyHomePage = React.lazy(() => import("./pages/homePage.jsx"));
+const LazyAboutPage = React.lazy(() => import("./pages/aboutPage"));
+const LazyProjectPage = React.lazy(() => import("./pages/projectPage"));
+const LazyDescPage = React.lazy(() => import("./pages/descPage"));
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
     errorElement: <ErrorPage />,
+    element: (
+      <Suspense fallback={<Spinner />}>
+        <LazyHomePage />
+      </Suspense>
+    ),
   },
   {
     path: "/about",
-    element: <AboutPage />,
+    element: (
+      <Suspense fallback={<Spinner />}>
+        <LazyAboutPage />
+      </Suspense>
+    ),
   },
   {
     path: "/project",
-    element: <ProjectPage />,
+    element: (
+      <Suspense fallback={<Spinner />}>
+        <LazyProjectPage />
+      </Suspense>
+    ),
   },
   {
     path: "/project/desc/:slug",
-    element: <DescPage />,
+    element: (
+      <Suspense fallback={<Spinner />}>
+        <LazyDescPage />
+      </Suspense>
+    ),
   },
 ]);
 

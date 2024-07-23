@@ -10,7 +10,7 @@ const Image = (props) => {
   return (
     <Link to={`/project/desc/${slug}`}>
       <div className="w-full h-[175px] group-hover:opacity-65 group-hover:scale-105 opacity-100 transition-all ">
-        <img src={image} alt="Image 2" className="h-full object-cover w-full object-top" />
+        <img src={image} alt={slug} className="h-full object-cover w-full object-top" />
       </div>
     </Link>
   );

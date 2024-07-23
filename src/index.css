@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* *{
-    background-color: #191E29;
-} */
-
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -35,4 +31,19 @@
 .parent[data-isOpen="true"] {
   width: 75px;
   height: 350px;
+}
+
+.custom-loader {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #01c38d 94%, #0000) top/16px 16px no-repeat, conic-gradient(#0000 25%, #01c38d);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 16px), #000 0);
+  animation: s3 1s infinite linear;
+}
+
+@keyframes s3 {
+  100% {
+    transform: rotate(1turn);
+  }
 }

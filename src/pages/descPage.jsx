@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Desc from "../components/Fragments/Desc";
+import Desc from "../components/Fragments/Projects/DescProject/Desc";
 
 const DescPage = () => {
   useEffect(() => {
