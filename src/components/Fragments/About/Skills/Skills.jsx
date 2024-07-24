@@ -36,7 +36,7 @@ export const Skills = () => {
             {TechStack.map((stack) => (
               <div data-aos="fade-up" data-aos-delay={stack.delay} key={stack.name} data-aos-offset="0">
                 <div className="group overflow-hidden rounded-xl py-5 w flex flex-col justify-between items-center gap-3 border-2 border-tesier border-opacity-0 hover:border-opacity-50 transition-all hover:scale-105 bg-tesier bg-opacity-0 hover:bg-opacity-5">
-                  <img className="group-hover:scale-110 transition-all w-10 h-10 md:w-12 md:h-12" src={stack.image} alt="icons" />
+                  <img loading="lazy" className="group-hover:scale-110 transition-all w-10 h-10 md:w-12 md:h-12" src={stack.image} alt="icons" />
                   <div className=" text-gray text-sm montserrat text-center flex flex-col gap-1">
                     <p className=" translate-y-3 group-hover:translate-y-0 transition-all">{stack.name}</p>
                     <p className="text-tesier translate-y-10 group-hover:translate-y-0 transition-all">{stack.level}</p>
@@ -51,7 +51,7 @@ export const Skills = () => {
             {Tools.map((tools) => (
               <div data-aos="fade-up" data-aos-delay={tools.delay} key={tools.name} data-aos-offset="0">
                 <div className="group overflow-hidden rounded-xl py-5 w flex flex-col justify-between items-center gap-3 border-2 border-tesier border-opacity-0 hover:border-opacity-50 transition-all hover:scale-105 bg-tesier bg-opacity-0 hover:bg-opacity-5">
-                  <img className="group-hover:scale-110 transition-all w-10 h-10 md:w-12 md:h-12" src={tools.image} alt="icons" />
+                  <img loading="lazy" className="group-hover:scale-110 transition-all w-10 h-10 md:w-12 md:h-12" src={tools.image} alt="icons" />
                   <div className=" text-gray text-sm montserrat text-center flex flex-col gap-1">
                     <p className=" translate-y-3 group-hover:translate-y-0 transition-all">{tools.name}</p>
                     <p className="text-tesier translate-y-10 group-hover:translate-y-0 transition-all">{tools.option}</p>

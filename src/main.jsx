@@ -4,16 +4,19 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ErrorPage } from "./pages/404Page";
 import Spinner from "./components/Elements/Spinner";
+import DescPage from "./pages/descPage";
 
 const LazyHomePage = React.lazy(() => import("./pages/homePage.jsx"));
 const LazyAboutPage = React.lazy(() => import("./pages/aboutPage"));
 const LazyProjectPage = React.lazy(() => import("./pages/projectPage"));
-const LazyDescPage = React.lazy(() => import("./pages/descPage"));
 
 const router = createBrowserRouter([
   {
+    path: "*",
+    element: <ErrorPage />,
+  },
+  {
     path: "/",
-    errorElement: <ErrorPage />,
     element: (
       <Suspense fallback={<Spinner />}>
         <LazyHomePage />
@@ -38,11 +41,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/project/desc/:slug",
-    element: (
-      <Suspense fallback={<Spinner />}>
-        <LazyDescPage />
-      </Suspense>
-    ),
+    element: <DescPage />,
   },
 ]);
 

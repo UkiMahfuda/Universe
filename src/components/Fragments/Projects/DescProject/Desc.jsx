@@ -16,7 +16,7 @@ const Desc = () => {
     <Fragment>
       <div className="bg-primary ">
         <div className="relative h-[225px]">
-          <img src={project.image} className="w-full h-full  object-cover object-top opacity-25" alt="" />
+          <img loading="lazy" src={project.image} className="w-full h-full  object-cover object-top opacity-25" alt="" />
           <div className="absolute top-[10%] left-[5%] sm:top-[15%] md:top-[20%] lg:top-[25%] lg:left-[15%]">
             <a data-aos="fade-up" href="/project" className=" transition-all text-tesier hover:text-opacity-50">
               <IoMdArrowRoundBack size={40} />
@@ -33,7 +33,7 @@ const Desc = () => {
         </div>
         <div className=" flex items-center justify-center py-10">
           <div className="w-11/12 lg:w-[70%] flex flex-col gap-5">
-            <Video />
+            <Video loading="lazy" />
             <div className="flex flex-col-reverse lg:flex-row gap-5 lg:gap-3">
               <div className="flex flex-col gap-3 lg:gap-1 lg:w-3/5 px-3">
                 <h2 data-aos="fade-up" data-aos-delay="200" className="text-white text-xl montserrat-bold">
@@ -51,7 +51,7 @@ const Desc = () => {
                 </h2>
                 <div className="flex flex-row gap-3" data-aos="fade-up" data-aos-delay="250">
                   {project.tech.map((tech, index) => (
-                    <img data-aos="fade-up" data-aos-delay="250" data-aos-offset="0" key={index} src={tech} alt="tech" className="md:h-7 h-6" />
+                    <img loading="lazy" data-aos="fade-up" data-aos-delay="250" data-aos-offset="0" key={index} src={tech} alt="tech" className="md:h-7 h-6" />
                   ))}
                 </div>
               </div>

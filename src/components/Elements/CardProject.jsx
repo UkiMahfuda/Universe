@@ -10,7 +10,7 @@ const Image = (props) => {
   return (
     <Link to={`/project/desc/${slug}`}>
       <div className="w-full h-[175px] group-hover:opacity-65 group-hover:scale-105 opacity-100 transition-all ">
-        <img src={image} alt={slug} className="h-full object-cover w-full object-top" />
+        <img loading="lazy" src={image} alt={slug} className="h-full object-cover w-full object-top" />
       </div>
     </Link>
   );
@@ -28,7 +28,7 @@ const title = (props) => {
 
 const tech = (props) => {
   const { tech } = props;
-  return <img src={tech} alt="tech" className="md:h-7 h-6" />;
+  return <img loading="lazy" src={tech} alt="tech" className="md:h-7 h-6" />;
 };
 
 CardProject.Image = Image;

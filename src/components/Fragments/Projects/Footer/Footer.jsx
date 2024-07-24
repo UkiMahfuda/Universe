@@ -24,7 +24,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="md:flex flex-col items-center hidden w-1/2" data-aos="fade-up" data-aos-delay="50">
-          <img src={img} alt="image" className="w-3/4" />
+          <img loading="lazy" src={img} alt="image" className="w-3/4" />
         </div>
       </div>
       <div className="mb-14 -mt-14 lg:mt-0 lg:mb-0 text-gray text-center text-[12px] md:text-sm montserrat opacity-75 flex flex-col justify-center items-center w-full py-2">
