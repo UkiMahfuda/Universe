@@ -55,7 +55,7 @@ export const Experience = () => {
                 </div>
               </div>
               {Active === "education" && (
-                <div className="flex flex-col h-[400px] lg:h-[450px] overflow-auto   w-4/5 ">
+                <div className="flex flex-col h-[450px] overflow-auto w-4/5 ">
                   <p className="text-xl montserrat-bold text-tesier mb-2">Education</p>
                   {education.map((edu) => (
                     <div key={edu.name}>
