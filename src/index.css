@@ -33,6 +33,25 @@
   height: 350px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateX(-69.4px);
+  }
+  25% {
+    transform: translateX(-69.4px) translateY(-7px);
+  }
+  50% {
+    transform: translateX(-69.4px) translateY(0px);
+  }
+  75% {
+    transform: translateX(-69.4px) translateY(-3px);
+  }
+}
+
+.bounce-animation {
+  animation: bounce 1s;
+}
+
 .custom-loader {
   width: 75px;
   height: 75px;
