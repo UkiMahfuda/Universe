@@ -22,8 +22,8 @@ export const Content = () => {
               As an Informatics student, I am used to working on projects using programming languages. such as project web development and mobile development
             </p>
             <p className="text-gray montserrat text-sm  xl:text-base" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
-              And for now my focus is in the field of <span className="text-tesier">Frontend Development,</span> I have strong knowledge and skills in <span className="text-tesier">Web Programming</span> and{" "}
-              <span className="text-tesier">Mobile Programming,</span> especially UI.
+              And for now my focus is in the field of <span className="text-tesier">Fullstack Development,</span> I have strong knowledge and skills in <span className="text-tesier">Frontend</span> and{" "}
+              <span className="text-tesier">Backend,</span> in development Web.
             </p>
             <p className="text-gray montserrat text-sm  xl:text-base" data-aos="fade-up" data-aos-delay="250" data-aos-offset="-100">
               I am committed to continuing to learn and develop, in line with ongoing technological advances, because I believe technology will not stop and will continue to make progress in the technology industry.
@@ -32,7 +32,7 @@ export const Content = () => {
         </div>
         <div data-aos="fade-up" data-aos-delay="200" data-aos-offset="-150" className=" flex items-center">
           <div className="grayscale transition-all duration-500 hover:grayscale-0 rounded-full">
-            <Tooltip text="Frontend Developer" name="Uki">
+            <Tooltip text="Fullstack Developer" name="Uki">
               <img loading="lazy" src={photo} alt="profile" className="w-44 h-48 lg:w-52 lg:h-56 object-cover object-top rounded-full border-[1px] " />
             </Tooltip>
           </div>
