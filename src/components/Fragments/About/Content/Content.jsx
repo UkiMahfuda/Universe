@@ -32,9 +32,9 @@ export const Content = () => {
         </div>
         <div data-aos="fade-up" data-aos-delay="200" data-aos-offset="-150" className=" flex items-center">
           <div className="grayscale transition-all duration-500 hover:grayscale-0 rounded-full">
-            <Tooltip text="Fullstack Developer" name="Uki">
-              <img loading="lazy" src={photo} alt="profile" className="w-44 h-48 lg:w-52 lg:h-56 object-cover object-top rounded-full border-[1px] " />
-            </Tooltip>
+            {/* <Tooltip text="Fullstack Developer" name="Uki"> */}
+            <img loading="lazy" src={photo} alt="profile" className="w-44 h-48 lg:w-52 lg:h-56 object-cover object-top rounded-full border-[1px] " />
+            {/* </Tooltip> */}
           </div>
         </div>
       </div>
