@@ -42,6 +42,5 @@ export const Home = () => {
         </div>
       </div>
     </Fragment>
-    // https://drive.google.com/file/d/1A597updYbHNlDscmj6qr87BTMO-38Pfy/view?usp=drivesdk
   );
 };

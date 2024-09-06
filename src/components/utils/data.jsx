@@ -35,6 +35,8 @@ import figma from "/static/icons/figma.svg";
 import python from "/static/icons/python.svg";
 import reactjs from "/static/icons/reactjs.svg";
 import firebase from "/static/icons/firebase.svg";
+import googleidx from "/static/icons/googleidx.svg";
+import postman from "/static/icons/postman.svg";
 
 export const NavbarList = [
   {
@@ -175,34 +177,46 @@ export const Tools = [
     delay: 0,
   },
   {
-    name: "Blender",
-    image: blender,
-    option: "3D Modeling",
-    delay: 150,
+    name: "Project IDX",
+    image: googleidx,
+    option: "Code Editor",
+    delay: 50,
+  },
+  {
+    name: "Postman",
+    image: postman,
+    option: "API Testing",
+    delay: 100,
   },
   {
     name: "Adobe Illustrator",
     image: ai,
     option: "Graphic Design",
-    delay: 200,
+    delay: 150,
   },
   {
     name: "Figma",
     image: figma,
     option: "UI Design",
-    delay: 250,
+    delay: 200,
   },
   {
-    name: "Git",
-    image: git,
-    option: "Version Control",
-    delay: 50,
+    name: "Blender",
+    image: blender,
+    option: "3D Modeling",
+    delay: 250,
   },
   {
     name: "Github",
     image: github,
     option: "Version Control",
-    delay: 100,
+    delay: 300,
+  },
+  {
+    name: "Git",
+    image: git,
+    option: "Version Control",
+    delay: 350,
   },
 ];
 
@@ -331,32 +345,41 @@ export const certification = [
     course: "Dicoding Indonesia.",
     desc: [
       {
-        name: "Cloud Practitioner Essentials (AWS Cloud)",
+        name: "Cloud Practitioner Essentials (AWS Cloud).",
         link: "https://www.dicoding.com/certificates/1OP8NG4WQXQK",
       },
       {
-        name: "Learn JavaScript Programming Basics",
+        name: "Learn JavaScript Programming Basics.",
         link: "https://www.dicoding.com/certificates/53XEY9KOVPRN",
       },
       {
-        name: "Learn to Create a Web Front-End for Beginners",
+        name: "Learn to Create a Web Front-End for Beginners.",
         link: "https://www.dicoding.com/certificates/2VX3OKDWQZYQ",
       },
       {
-        name: "Learn Web Programming Basics",
+        name: "Learn Web Programming Basics.",
         link: "https://www.dicoding.com/certificates/JLX1291Y2Z72",
       },
       {
-        name: "Getting Started with Programming Basics to Become a Software Developer",
+        name: "Getting Started with Programming Basics to Become a Software Developer.",
         link: "https://www.dicoding.com/certificates/EYX4YV2O6ZDL",
       },
       {
-        name: "Learn Git Basics with GitHub",
+        name: "Learn Git Basics with GitHub.",
         link: "https://www.dicoding.com/certificates/98XWVRE6JPM3",
       },
       {
-        name: "Learn Basic Structured Query Language (SQL)",
+        name: "Learn Basic Structured Query Language (SQL).",
         link: "https://www.dicoding.com/certificates/QLZ9R856MP5D",
+      },
+    ],
+  },
+  {
+    course: "Digitalent (Vocational School Graduate Academy).",
+    desc: [
+      {
+        name: "Junior Web Developer.",
+        link: "https://drive.google.com/file/d/1CHQZMwdT4ypa25NjVewQqzgwHpeyAcRc/view",
       },
     ],
   },
@@ -364,7 +387,7 @@ export const certification = [
     course: "Universitas Teknokrat Indonesia.",
     desc: [
       {
-        name: "Basic Artificial Intelligence",
+        name: "Basic Artificial Intelligence.",
         link: "https://drive.google.com/file/d/1_0Xq3Ex_VxhdgkZ5i8NPoWDQ8HLbfpec/view?usp=drive_link",
       },
     ],
