@@ -375,6 +375,15 @@ export const certification = [
     ],
   },
   {
+    course: "Udemy.",
+    desc: [
+      {
+        name: "Webservices API Testing with Postman - Complete Guide.",
+        link: "https://www.udemy.com/certificate/UC-a88a383e-09b3-4c9c-a90b-08dd88b83117/",
+      },
+    ],
+  },
+  {
     course: "Digitalent (Vocational School Graduate Academy).",
     desc: [
       {
